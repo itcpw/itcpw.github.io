@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="nginx,">
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="作用： 负载均衡—集群（减轻单台服务器压力） 反向代理： 不暴露真实IP地址， 使用Https防止抓包分析Http请求 搭建企业黑名单和白名单系统 模拟请求(csrf业务攻击),XSS,SQL注入 解决ddos(流量攻击)—让别人无法访问 CDN   虚拟服务器 静态服务器(动静分离) 解决跨域问题  优点:性能非常好,占内存小,轻量级服务器,抗住同时5万并发连接 用途:分布式,微服务,高并发,高">
+<meta name="keywords" content="nginx">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/04/08/hello-world/index.html">
+<meta property="og:title" content="nginx学习笔记">
+<meta property="og:url" content="http://yoursite.com/2019/04/08/Nginx/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="作用： 负载均衡—集群（减轻单台服务器压力） 反向代理： 不暴露真实IP地址， 使用Https防止抓包分析Http请求 搭建企业黑名单和白名单系统 模拟请求(csrf业务攻击),XSS,SQL注入 解决ddos(流量攻击)—让别人无法访问 CDN   虚拟服务器 静态服务器(动静分离) 解决跨域问题  优点:性能非常好,占内存小,轻量级服务器,抗住同时5万并发连接 用途:分布式,微服务,高并发,高">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-08T06:27:43.050Z">
+<meta property="og:updated_time" content="2019-04-08T08:03:21.113Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="nginx学习笔记">
+<meta name="twitter:description" content="作用： 负载均衡—集群（减轻单台服务器压力） 反向代理： 不暴露真实IP地址， 使用Https防止抓包分析Http请求 搭建企业黑名单和白名单系统 模拟请求(csrf业务攻击),XSS,SQL注入 解决ddos(流量攻击)—让别人无法访问 CDN   虚拟服务器 静态服务器(动静分离) 解决跨域问题  优点:性能非常好,占内存小,轻量级服务器,抗住同时5万并发连接 用途:分布式,微服务,高并发,高">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/04/08/hello-world/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/08/Nginx/">
 
 
 
 
 
-  <title>Hello World | Hexo</title>
+  <title>nginx学习笔记 | Hexo</title>
   
 
 
@@ -232,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/08/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/08/Nginx/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="罗佩文">
@@ -249,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">nginx学习笔记</h1>
         
 
         <div class="post-meta">
@@ -261,7 +262,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-08T14:27:43+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-08T15:49:29+08:00">
                 2019-04-08
               </time>
             
@@ -299,15 +300,79 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="作用："><a href="#作用：" class="headerlink" title="作用："></a>作用：</h2><ol>
+<li>负载均衡—集群（减轻单台服务器压力）</li>
+<li>反向代理：<ul>
+<li>不暴露真实IP地址，</li>
+<li>使用Https防止抓包分析Http请求</li>
+<li>搭建企业黑名单和白名单系统</li>
+<li>模拟请求(csrf业务攻击),XSS,SQL注入</li>
+<li>解决ddos(流量攻击)—让别人无法访问</li>
+<li>CDN</li>
+</ul>
+</li>
+<li>虚拟服务器</li>
+<li>静态服务器(动静分离)</li>
+<li>解决跨域问题</li>
+</ol>
+<h2 id="优点"><a href="#优点" class="headerlink" title="优点:"></a>优点:</h2><pre><code>性能非常好,占内存小,轻量级服务器,抗住同时5万并发连接
+</code></pre><h2 id="用途"><a href="#用途" class="headerlink" title="用途:"></a>用途:</h2><pre><code>分布式,微服务,高并发,高可用,消息中间件
+</code></pre><h2 id="同类产品"><a href="#同类产品" class="headerlink" title="同类产品:"></a>同类产品:</h2><pre><code>lys(中国人写的),F5(硬件,不是主流),Haproxy
+</code></pre><h2 id="windows安装nginx"><a href="#windows安装nginx" class="headerlink" title="windows安装nginx"></a>windows安装nginx</h2><pre><code>1.nginx默认端口80
+</code></pre><h2 id="配置反向代理服务器"><a href="#配置反向代理服务器" class="headerlink" title="配置反向代理服务器"></a>配置反向代理服务器</h2><ol>
+<li>单台服务器接受高并发情况下,会发生宕机,瘫痪</li>
+<li>高并发解决方案:集群</li>
+<li>集群产生的问题:<ol>
+<li>分布式job幂等性问题,</li>
+<li>会话共享问题 </li>
+<li>分布式生成全局ID </li>
+<li>生成订单ID时间戳,订单号怎么解决幂等性问题,提前生成好,存储在Redis中</li>
+</ol>
+</li>
+<li>分布式锁:多个JVM之间通信,同一时间只有一个JVM生成订单号</li>
+<li>客户端发送请求—&gt;nginx反向代理服务器(负载均衡)–&gt;各种服务</li>
+<li>搭建集群前先搭建反向代理</li>
+</ol>
+<h2 id="配置负载均衡"><a href="#配置负载均衡" class="headerlink" title="配置负载均衡:"></a>配置负载均衡:</h2><ul>
+<li><p>提高网站吞吐量,算法:轮训(机器都相同时使用),IP绑定(一直访问固定一台服务器,会话共享),权重(比例分配,机器配置不同),默认是轮训机制</p>
+</li>
+<li><p>轮训配置:</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">upstream backserver&#123;</span><br><span class="line">    server 192.168.25.128 ;</span><br><span class="line">    server 192.168.25.129 ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>权重配置:多了个weight属性,按几个服务器weight的值做比例来的</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">upstream backserver&#123;</span><br><span class="line">    server 192.168.25.128 weight=2;</span><br><span class="line">    server 192.168.25.129 weight=1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>ip绑定:客户端ip地址和服务器地址进行绑定,除非换一台电脑,不然一直访问绑定的ip<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">upstream backserver&#123;</span><br><span class="line">    ip_hash;</span><br><span class="line">    server 192.168.25.128 ;</span><br><span class="line">    server 192.168.25.129 ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="服务器宕机容错机制-高可用"><a href="#服务器宕机容错机制-高可用" class="headerlink" title="服务器宕机容错机制(高可用)"></a>服务器宕机容错机制(高可用)</h3><ul>
+<li>一主一备或者多主多备</li>
+<li><p>配置多台主机和备用机,同时配置多台nginx和和备用nginx,</p>
+<ol>
+<li>服务器宕机,首先keepalived重启脚本重启服务器,如果不行,nginx通过配置会轮询到下一台服务器,</li>
+<li>nginx服务器宕机,就会启动高可用工具keepalive重启脚本,重启多次仍不行,会通知运维人员</li>
+<li>发布新版本的时候,为什么服务器能访问?先给主机发布,再给备机发布</li>
+<li>tomcat发版本的时候session怎么同步?存放在redis或者在数据库中</li>
+</ol>
+</li>
+<li><p>跨域问题:属于前端ajax访问请求域名与浏览器访问的域名地址不相同,存在跨域问题 解决:</p>
+<ol>
+<li>jsoup不支持post请求支持get</li>
+<li>httpClien进行内部转发</li>
+<li>使用http响应头允许跨域设置</li>
+<li>使用nginx搭建企业api接口网关</li>
+<li>使用springcloudzuul接口网关</li>
+</ol>
+</li>
+<li><p>网关:拦截所有请求,进行分发<br>使用nginx搭建企业api接口网关实现原理:域名相同,项目不同,进行拦截跳转到真实服务器中</p>
+</li>
+</ul>
+<blockquote>
+<p>nginx如何实现高并发<br>就是异步，非阻塞，使用了epoll和大量的底层代码优化。</p>
+</blockquote>
 
       
     </div>
@@ -323,6 +388,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/nginx/" rel="tag"># nginx</a>
+          
+        </div>
+      
 
       
       
@@ -332,14 +403,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/04/08/知识梳理/" rel="next" title="知识梳理">
+                <i class="fa fa-chevron-left"></i> 知识梳理
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/08/知识梳理/" rel="prev" title="知识梳理">
-                知识梳理 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/04/08/newpapername/" rel="prev" title="newpapername">
+                newpapername <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -463,7 +538,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#作用："><span class="nav-number">1.</span> <span class="nav-text">作用：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优点"><span class="nav-number">2.</span> <span class="nav-text">优点:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用途"><span class="nav-number">3.</span> <span class="nav-text">用途:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#同类产品"><span class="nav-number">4.</span> <span class="nav-text">同类产品:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#windows安装nginx"><span class="nav-number">5.</span> <span class="nav-text">windows安装nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置反向代理服务器"><span class="nav-number">6.</span> <span class="nav-text">配置反向代理服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置负载均衡"><span class="nav-number">7.</span> <span class="nav-text">配置负载均衡:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#服务器宕机容错机制-高可用"><span class="nav-number">7.1.</span> <span class="nav-text">服务器宕机容错机制(高可用)</span></a></li></ol></li></ol></div>
             
 
           </div>
