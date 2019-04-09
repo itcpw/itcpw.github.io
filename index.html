@@ -331,81 +331,28 @@
       
         
           
-            <h2 id="作用："><a href="#作用：" class="headerlink" title="作用："></a>作用：</h2><ol>
-<li>负载均衡—集群（减轻单台服务器压力）</li>
-<li>反向代理：<ul>
-<li>不暴露真实IP地址，</li>
-<li>使用Https防止抓包分析Http请求</li>
-<li>搭建企业黑名单和白名单系统</li>
-<li>模拟请求(csrf业务攻击),XSS,SQL注入</li>
-<li>解决ddos(流量攻击)—让别人无法访问</li>
-<li>CDN</li>
-</ul>
-</li>
-<li>虚拟服务器</li>
-<li>静态服务器(动静分离)</li>
-<li>解决跨域问题</li>
-</ol>
-<h2 id="优点"><a href="#优点" class="headerlink" title="优点:"></a>优点:</h2><pre><code>性能非常好,占内存小,轻量级服务器,抗住同时5万并发连接
-</code></pre><h2 id="用途"><a href="#用途" class="headerlink" title="用途:"></a>用途:</h2><pre><code>分布式,微服务,高并发,高可用,消息中间件
-</code></pre><h2 id="同类产品"><a href="#同类产品" class="headerlink" title="同类产品:"></a>同类产品:</h2><pre><code>lys(中国人写的),F5(硬件,不是主流),Haproxy
-</code></pre><h2 id="windows安装nginx"><a href="#windows安装nginx" class="headerlink" title="windows安装nginx"></a>windows安装nginx</h2><pre><code>1.nginx默认端口80
-</code></pre><h2 id="配置反向代理服务器"><a href="#配置反向代理服务器" class="headerlink" title="配置反向代理服务器"></a>配置反向代理服务器</h2><ol>
-<li>单台服务器接受高并发情况下,会发生宕机,瘫痪</li>
-<li>高并发解决方案:集群</li>
-<li>集群产生的问题:<ol>
-<li>分布式job幂等性问题,</li>
-<li>会话共享问题 </li>
-<li>分布式生成全局ID </li>
-<li>生成订单ID时间戳,订单号怎么解决幂等性问题,提前生成好,存储在Redis中</li>
-</ol>
-</li>
-<li>分布式锁:多个JVM之间通信,同一时间只有一个JVM生成订单号</li>
-<li>客户端发送请求—&gt;nginx反向代理服务器(负载均衡)–&gt;各种服务</li>
-<li>搭建集群前先搭建反向代理</li>
-</ol>
-<h2 id="配置负载均衡"><a href="#配置负载均衡" class="headerlink" title="配置负载均衡:"></a>配置负载均衡:</h2><ul>
-<li><p>提高网站吞吐量,算法:轮训(机器都相同时使用),IP绑定(一直访问固定一台服务器,会话共享),权重(比例分配,机器配置不同),默认是轮训机制</p>
-</li>
-<li><p>轮训配置:</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">upstream backserver&#123;</span><br><span class="line">    server 192.168.25.128 ;</span><br><span class="line">    server 192.168.25.129 ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>权重配置:多了个weight属性,按几个服务器weight的值做比例来的</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">upstream backserver&#123;</span><br><span class="line">    server 192.168.25.128 weight=2;</span><br><span class="line">    server 192.168.25.129 weight=1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>ip绑定:客户端ip地址和服务器地址进行绑定,除非换一台电脑,不然一直访问绑定的ip<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">upstream backserver&#123;</span><br><span class="line">    ip_hash;</span><br><span class="line">    server 192.168.25.128 ;</span><br><span class="line">    server 192.168.25.129 ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="服务器宕机容错机制-高可用"><a href="#服务器宕机容错机制-高可用" class="headerlink" title="服务器宕机容错机制(高可用)"></a>服务器宕机容错机制(高可用)</h3><ul>
-<li>一主一备或者多主多备</li>
-<li><p>配置多台主机和备用机,同时配置多台nginx和和备用nginx,</p>
-<ol>
-<li>服务器宕机,首先keepalived重启脚本重启服务器,如果不行,nginx通过配置会轮询到下一台服务器,</li>
-<li>nginx服务器宕机,就会启动高可用工具keepalive重启脚本,重启多次仍不行,会通知运维人员</li>
-<li>发布新版本的时候,为什么服务器能访问?先给主机发布,再给备机发布</li>
-<li>tomcat发版本的时候session怎么同步?存放在redis或者在数据库中</li>
-</ol>
-</li>
-<li><p>跨域问题:属于前端ajax访问请求域名与浏览器访问的域名地址不相同,存在跨域问题 解决:</p>
-<ol>
-<li>jsoup不支持post请求支持get</li>
-<li>httpClien进行内部转发</li>
-<li>使用http响应头允许跨域设置</li>
-<li>使用nginx搭建企业api接口网关</li>
-<li>使用springcloudzuul接口网关</li>
-</ol>
-</li>
-<li><p>网关:拦截所有请求,进行分发<br>使用nginx搭建企业api接口网关实现原理:域名相同,项目不同,进行拦截跳转到真实服务器中</p>
-</li>
-</ul>
-<blockquote>
-<p>nginx如何实现高并发<br>就是异步，非阻塞，使用了epoll和大量的底层代码优化。</p>
-</blockquote>
+          作用：
+负载均衡—集群（减轻单台服务器压力）
+反向代理：
+不暴露真实IP地址，
+使用Https防止抓包分析Http请求
+搭建企业黑名单和白名单系统
+模拟请求(csrf业务攻击),XSS,SQL注入
+解决ddos(流量攻击)—让别人无法访问
+CDN
 
-          
+
+虚拟服务器
+静态服务器(动静分离)
+解决跨域问题
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/08/Nginx/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -544,71 +491,32 @@
       
         
           
-            <h2 id="java基础"><a href="#java基础" class="headerlink" title="java基础"></a>java基础</h2><ol>
-<li>jvm</li>
-<li>集合</li>
-<li>多线程</li>
-</ol>
-<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><ol>
-<li>mysql</li>
-<li>oracle</li>
-</ol>
-<h2 id="linux"><a href="#linux" class="headerlink" title="linux"></a>linux</h2><h2 id="前端技能"><a href="#前端技能" class="headerlink" title="前端技能"></a>前端技能</h2><ol>
-<li>html+div+css</li>
-<li>bootstrap</li>
-<li>js+jQuery+vue.js</li>
-</ol>
-<h2 id="web基础"><a href="#web基础" class="headerlink" title="web基础"></a>web基础</h2><ol>
-<li>web三大组件:<ul>
-<li>servlet <ul>
-<li>servlet里三个域对象:request,session,servletContext</li>
-</ul>
-</li>
-<li>listener</li>
-<li>filter  </li>
-</ul>
-</li>
-<li>tomcat</li>
-</ol>
-<h2 id="必备框架"><a href="#必备框架" class="headerlink" title="必备框架"></a><strong>必备框架</strong></h2><ol>
-<li>spring</li>
-<li>springmvc</li>
-<li>mybatis</li>
-</ol>
-<h2 id="分布式"><a href="#分布式" class="headerlink" title="分布式"></a>分布式</h2><h3 id="rpc远程调用框架"><a href="#rpc远程调用框架" class="headerlink" title="rpc远程调用框架"></a>rpc远程调用框架</h3><ol>
-<li>dubbo</li>
-<li>spring-cloud</li>
-</ol>
-<h3 id="中间件"><a href="#中间件" class="headerlink" title="中间件"></a>中间件</h3><ol>
-<li>zookeeper</li>
-<li>eureka</li>
-<li>activemq</li>
-<li>rabbitmq</li>
-<li>zeromq</li>
-<li>kafuka</li>
-</ol>
-<h3 id="分布式存储"><a href="#分布式存储" class="headerlink" title="分布式存储"></a>分布式存储</h3><ol>
-<li>mysql</li>
-<li>mongodb</li>
-<li>redis</li>
-<li>云存储</li>
-</ol>
-<h3 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a>nginx</h3><ol>
-<li>反向代理</li>
-<li>负载均衡</li>
-<li>静态服务器</li>
-</ol>
-<h3 id="分布式解决方案"><a href="#分布式解决方案" class="headerlink" title="分布式解决方案"></a>分布式解决方案</h3><ol>
-<li>分布式事务</li>
-<li>跨域解决方案</li>
-<li>分布式配置中心</li>
-<li>分布式锁</li>
-<li>分布式日志收集</li>
-<li>分布式任务调度</li>
-<li>服务降级与限流</li>
-</ol>
+          java基础
+jvm
+集合
+多线程
 
-          
+数据库
+mysql
+oracle
+
+linux前端技能
+html+div+css
+bootstrap
+js+jQuery+vue.js
+
+web基础
+web三大组件:
+servlet 
+servlet里三个域对象:request,session,servletC
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/08/知识梳理/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -747,17 +655,15 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/08/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
