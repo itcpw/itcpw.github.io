@@ -410,7 +410,7 @@
             
                 <span class="post-meta-item-text">评论数：</span>
                 <a href="/2019/04/08/Nginx/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/08/Nginx/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/08/Nginx/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -600,7 +600,7 @@ CDN
             
                 <span class="post-meta-item-text">评论数：</span>
                 <a href="/2019/04/08/知识梳理/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/08/知识梳理/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/08/知识梳理/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -790,7 +790,7 @@ servlet里三个域对象:request,session,servletC
             
                 <span class="post-meta-item-text">评论数：</span>
                 <a href="/2019/04/08/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/08/hello-world/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/08/hello-world/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -979,7 +979,7 @@ servlet里三个域对象:request,session,servletC
             
                 <span class="post-meta-item-text">评论数：</span>
                 <a href="/2018/03/20/lucene/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/03/20/lucene/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/20/lucene/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1168,7 +1168,7 @@ servlet里三个域对象:request,session,servletC
             
                 <span class="post-meta-item-text">评论数：</span>
                 <a href="/2018/02/12/java_web中文乱码总结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/02/12/java_web中文乱码总结/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/02/12/java_web中文乱码总结/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1359,7 +1359,7 @@ tomcat-7.x中中文乱码问题
             
                 <span class="post-meta-item-text">评论数：</span>
                 <a href="/2017/12/06/Maven/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/12/06/Maven/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/12/06/Maven/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1548,7 +1548,7 @@ tomcat-7.x中中文乱码问题
             
                 <span class="post-meta-item-text">评论数：</span>
                 <a href="/2017/09/16/mysql/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/09/16/mysql/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/09/16/mysql/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1744,7 +1744,7 @@ tomcat-7.x中中文乱码问题
             
                 <span class="post-meta-item-text">评论数：</span>
                 <a href="/2017/08/10/JavaScript&JQuery/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/08/10/JavaScript&JQuery/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/08/10/JavaScript&JQuery/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -2111,9 +2111,33 @@ BOM(Browser Object Model)Window对象:三个弹窗(alert,confirm,prompt)，四�
 
   
   
-  <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
 
 
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'iAp9YhWSKOhh5oQGcGvnVMgm-gzGzoHsz',
+    appKey: 'gRAeO1f50U1a17J5OKgy6vPy',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: true,
+    lang: '' || 'zh-cn'
+  });
+</script>
 
 
 
