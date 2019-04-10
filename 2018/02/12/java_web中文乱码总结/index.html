@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="java基础 jvm 集合 多线程  数据库 mysql oracle  linux前端技能 html+div+css bootstrap js+jQuery+vue.js  web基础 web三大组件: servlet  servlet里三个域对象:request,session,servletContext   listener filter     tomcat  必备框架 spring s">
-<meta name="keywords" content="知识梳理">
+  <meta name="description" content="tomcat-7.x中中文乱码问题 在tomcat-7.x中Servlet的service中post方法没有解决中文乱码问题（tomcat-8.x中解决了） String s=request.getParameter(&amp;quot;xxx&amp;quot;); String s2=new String(s.getBytes(&amp;quot;iso-8859-1&amp;quot;).&amp;quot;utf8&amp;quot;">
+<meta name="keywords" content="乱码">
 <meta property="og:type" content="article">
-<meta property="og:title" content="知识梳理">
-<meta property="og:url" content="http://yoursite.com/2019/04/08/知识梳理/index.html">
+<meta property="og:title" content="java web中中文乱码问题">
+<meta property="og:url" content="http://yoursite.com/2018/02/12/java_web中文乱码总结/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="java基础 jvm 集合 多线程  数据库 mysql oracle  linux前端技能 html+div+css bootstrap js+jQuery+vue.js  web基础 web三大组件: servlet  servlet里三个域对象:request,session,servletContext   listener filter     tomcat  必备框架 spring s">
+<meta property="og:description" content="tomcat-7.x中中文乱码问题 在tomcat-7.x中Servlet的service中post方法没有解决中文乱码问题（tomcat-8.x中解决了） String s=request.getParameter(&amp;quot;xxx&amp;quot;); String s2=new String(s.getBytes(&amp;quot;iso-8859-1&amp;quot;).&amp;quot;utf8&amp;quot;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-08T08:03:57.516Z">
+<meta property="og:updated_time" content="2019-04-10T03:21:32.584Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="知识梳理">
-<meta name="twitter:description" content="java基础 jvm 集合 多线程  数据库 mysql oracle  linux前端技能 html+div+css bootstrap js+jQuery+vue.js  web基础 web三大组件: servlet  servlet里三个域对象:request,session,servletContext   listener filter     tomcat  必备框架 spring s">
+<meta name="twitter:title" content="java web中中文乱码问题">
+<meta name="twitter:description" content="tomcat-7.x中中文乱码问题 在tomcat-7.x中Servlet的service中post方法没有解决中文乱码问题（tomcat-8.x中解决了） String s=request.getParameter(&amp;quot;xxx&amp;quot;); String s2=new String(s.getBytes(&amp;quot;iso-8859-1&amp;quot;).&amp;quot;utf8&amp;quot;">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/04/08/知识梳理/">
+  <link rel="canonical" href="http://yoursite.com/2018/02/12/java_web中文乱码总结/">
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>知识梳理 | Hexo</title>
+  <title>java web中中文乱码问题 | Hexo</title>
   
 
 
@@ -329,7 +329,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/08/知识梳理/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/12/java_web中文乱码总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="罗佩文">
@@ -346,7 +346,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">知识梳理
+          <h1 class="post-title" itemprop="name headline">java web中中文乱码问题
 
               
             
@@ -372,12 +372,24 @@
                 
               
 
-              <time title="创建时间：2019-04-08 15:49:29 / 修改时间：16:03:57" itemprop="dateCreated datePublished" datetime="2019-04-08T15:49:29+08:00">2019-04-08</time>
+              <time title="创建时间：2018-02-12 09:30:17" itemprop="dateCreated datePublished" datetime="2018-02-12T09:30:17+08:00">2018-02-12</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-10 11:21:32" itemprop="dateModified" datetime="2019-04-10T11:21:32+08:00">2019-04-10</time>
               
             
           </span>
@@ -395,8 +407,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/04/08/知识梳理/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/08/知识梳理/" itemprop="commentCount"></span>
+                <a href="/2018/02/12/java_web中文乱码总结/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/02/12/java_web中文乱码总结/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -404,7 +416,7 @@
 
           
           
-            <span id="/2019/04/08/知识梳理/" class="leancloud_visitors" data-flag-title="知识梳理">
+            <span id="/2018/02/12/java_web中文乱码总结/" class="leancloud_visitors" data-flag-title="java web中中文乱码问题">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -435,68 +447,20 @@
       
 
       
-        <h2 id="java基础"><a href="#java基础" class="headerlink" title="java基础"></a>java基础</h2><ol>
-<li>jvm</li>
-<li>集合</li>
-<li>多线程</li>
+        <ol>
+<li>tomcat-7.x中中文乱码问题<ol>
+<li>在tomcat-7.x中Servlet的service中post方法没有解决中文乱码问题（tomcat-8.x中解决了）<br> <code>String s=request.getParameter(&quot;xxx&quot;);</code><br> <code>String s2=new String(s.getBytes(&quot;iso-8859-1&quot;).&quot;utf8&quot;);</code></li>
+<li>在servlet.xml中进行如下配置（此方法仅总结，未实践）：<br> <code>&lt;Connector port=&quot;8009&quot; enableLookups=&quot;false&quot;redirectPort=&quot;8443&quot;</code><br> <code>debug=&quot;0&quot; protocol=&quot;AJP/1.3&quot;URIEncoding=&quot;UTF-8&quot;/&gt;</code></li>
 </ol>
-<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><ol>
-<li>mysql</li>
-<li>oracle</li>
-</ol>
-<h2 id="linux"><a href="#linux" class="headerlink" title="linux"></a>linux</h2><h2 id="前端技能"><a href="#前端技能" class="headerlink" title="前端技能"></a>前端技能</h2><ol>
-<li>html+div+css</li>
-<li>bootstrap</li>
-<li>js+jQuery+vue.js</li>
-</ol>
-<h2 id="web基础"><a href="#web基础" class="headerlink" title="web基础"></a>web基础</h2><ol>
-<li>web三大组件:<ul>
-<li>servlet <ul>
-<li>servlet里三个域对象:request,session,servletContext</li>
-</ul>
 </li>
-<li>listener</li>
-<li>filter  </li>
-</ul>
+<li>tomcat-8.x中中文乱码问题：<ol>
+<li>request,即当从浏览器获取数据时，分为get请求和post，无论客户端是什么类型的数据，用request。getParameterxxx方法，返回值都为String类型的数据，<br> <code>request.setCharacterEncoding(&quot;utf8&quot;);</code>注：tomcat7.x中post请求乱码问题未解决，get解决了，所以tom7中post请求仅使用这一行代码解决不了，要使用上面的方法</li>
+<li>response,即从servlet给浏览器返回数据时：<br> <code>response.setContentType(&quot;text/html;charset=utf8&quot;);</code><br> <code>response.setContentType(&quot;text/html;charset=utf8&quot;);</code>给浏览器传json数据时设置，<blockquote>
+<p>注：Tomcat7对URI默认编码是ISO-8859-1<br>Tomcat8对URI默认编码是UTF-8</p>
+</blockquote>
 </li>
-<li>tomcat</li>
 </ol>
-<h2 id="必备框架"><a href="#必备框架" class="headerlink" title="必备框架"></a><strong>必备框架</strong></h2><ol>
-<li>spring</li>
-<li>springmvc</li>
-<li>mybatis</li>
-</ol>
-<h2 id="分布式"><a href="#分布式" class="headerlink" title="分布式"></a>分布式</h2><h3 id="rpc远程调用框架"><a href="#rpc远程调用框架" class="headerlink" title="rpc远程调用框架"></a>rpc远程调用框架</h3><ol>
-<li>dubbo</li>
-<li>spring-cloud</li>
-</ol>
-<h3 id="中间件"><a href="#中间件" class="headerlink" title="中间件"></a>中间件</h3><ol>
-<li>zookeeper</li>
-<li>eureka</li>
-<li>activemq</li>
-<li>rabbitmq</li>
-<li>zeromq</li>
-<li>kafuka</li>
-</ol>
-<h3 id="分布式存储"><a href="#分布式存储" class="headerlink" title="分布式存储"></a>分布式存储</h3><ol>
-<li>mysql</li>
-<li>mongodb</li>
-<li>redis</li>
-<li>云存储</li>
-</ol>
-<h3 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a>nginx</h3><ol>
-<li>反向代理</li>
-<li>负载均衡</li>
-<li>静态服务器</li>
-</ol>
-<h3 id="分布式解决方案"><a href="#分布式解决方案" class="headerlink" title="分布式解决方案"></a>分布式解决方案</h3><ol>
-<li>分布式事务</li>
-<li>跨域解决方案</li>
-<li>分布式配置中心</li>
-<li>分布式锁</li>
-<li>分布式日志收集</li>
-<li>分布式任务调度</li>
-<li>服务降级与限流</li>
+</li>
 </ol>
 
       
@@ -521,7 +485,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/知识梳理/" rel="tag"># 知识梳理</a>
+            <a href="/tags/乱码/" rel="tag"># 乱码</a>
           
         </div>
       
@@ -586,8 +550,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/08/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2017/12/06/Maven/" rel="next" title="Maven笔记">
+                <i class="fa fa-chevron-left"></i> Maven笔记
               </a>
             
           </div>
@@ -596,8 +560,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/08/Nginx/" rel="prev" title="nginx学习笔记">
-                nginx学习笔记 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/20/lucene/" rel="prev" title="lucene">
+                lucene <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -646,17 +610,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -755,23 +710,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#java基础"><span class="nav-number">1.</span> <span class="nav-text">java基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库"><span class="nav-number">2.</span> <span class="nav-text">数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linux"><span class="nav-number">3.</span> <span class="nav-text">linux</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前端技能"><span class="nav-number">4.</span> <span class="nav-text">前端技能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#web基础"><span class="nav-number">5.</span> <span class="nav-text">web基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#必备框架"><span class="nav-number">6.</span> <span class="nav-text">必备框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分布式"><span class="nav-number">7.</span> <span class="nav-text">分布式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#rpc远程调用框架"><span class="nav-number">7.1.</span> <span class="nav-text">rpc远程调用框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#中间件"><span class="nav-number">7.2.</span> <span class="nav-text">中间件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布式存储"><span class="nav-number">7.3.</span> <span class="nav-text">分布式存储</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nginx"><span class="nav-number">7.4.</span> <span class="nav-text">nginx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布式解决方案"><span class="nav-number">7.5.</span> <span class="nav-text">分布式解决方案</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
