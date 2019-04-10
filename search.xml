@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[nginx学习笔记]]></title>
+    <url>%2F2019%2F04%2F08%2FNginx%2F</url>
+    <content type="text"><![CDATA[作用： 负载均衡—集群（减轻单台服务器压力） 反向代理： 不暴露真实IP地址， 使用Https防止抓包分析Http请求 搭建企业黑名单和白名单系统 模拟请求(csrf业务攻击),XSS,SQL注入 解决ddos(流量攻击)—让别人无法访问 CDN 虚拟服务器 静态服务器(动静分离) 解决跨域问题 优点:性能非常好,占内存小,轻量级服务器,抗住同时5万并发连接 用途:分布式,微服务,高并发,高可用,消息中间件 同类产品:lys(中国人写的),F5(硬件,不是主流),Haproxy windows安装nginx1.nginx默认端口80 配置反向代理服务器 单台服务器接受高并发情况下,会发生宕机,瘫痪 高并发解决方案:集群 集群产生的问题: 分布式job幂等性问题, 会话共享问题 分布式生成全局ID 生成订单ID时间戳,订单号怎么解决幂等性问题,提前生成好,存储在Redis中 分布式锁:多个JVM之间通信,同一时间只有一个JVM生成订单号 客户端发送请求—&gt;nginx反向代理服务器(负载均衡)–&gt;各种服务 搭建集群前先搭建反向代理 配置负载均衡: 提高网站吞吐量,算法:轮训(机器都相同时使用),IP绑定(一直访问固定一台服务器,会话共享),权重(比例分配,机器配置不同),默认是轮训机制 轮训配置: 1234upstream backserver&#123; server 192.168.25.128 ; server 192.168.25.129 ;&#125; 权重配置:多了个weight属性,按几个服务器weight的值做比例来的 1234upstream backserver&#123; server 192.168.25.128 weight=2; server 192.168.25.129 weight=1;&#125; ip绑定:客户端ip地址和服务器地址进行绑定,除非换一台电脑,不然一直访问绑定的ip 12345upstream backserver&#123; ip_hash; server 192.168.25.128 ; server 192.168.25.129 ;&#125; 服务器宕机容错机制(高可用) 一主一备或者多主多备 配置多台主机和备用机,同时配置多台nginx和和备用nginx, 服务器宕机,首先keepalived重启脚本重启服务器,如果不行,nginx通过配置会轮询到下一台服务器, nginx服务器宕机,就会启动高可用工具keepalive重启脚本,重启多次仍不行,会通知运维人员 发布新版本的时候,为什么服务器能访问?先给主机发布,再给备机发布 tomcat发版本的时候session怎么同步?存放在redis或者在数据库中 跨域问题:属于前端ajax访问请求域名与浏览器访问的域名地址不相同,存在跨域问题 解决: jsoup不支持post请求支持get httpClien进行内部转发 使用http响应头允许跨域设置 使用nginx搭建企业api接口网关 使用springcloudzuul接口网关 网关:拦截所有请求,进行分发使用nginx搭建企业api接口网关实现原理:域名相同,项目不同,进行拦截跳转到真实服务器中 nginx如何实现高并发就是异步，非阻塞，使用了epoll和大量的底层代码优化。]]></content>
+      <tags>
+        <tag>nginx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[知识梳理]]></title>
+    <url>%2F2019%2F04%2F08%2F%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86%2F</url>
+    <content type="text"><![CDATA[java基础 jvm 集合 多线程 数据库 mysql oracle linux前端技能 html+div+css bootstrap js+jQuery+vue.js web基础 web三大组件: servlet servlet里三个域对象:request,session,servletContext listener filter tomcat 必备框架 spring springmvc mybatis 分布式rpc远程调用框架 dubbo spring-cloud 中间件 zookeeper eureka activemq rabbitmq zeromq kafuka 分布式存储 mysql mongodb redis 云存储 nginx 反向代理 负载均衡 静态服务器 分布式解决方案 分布式事务 跨域解决方案 分布式配置中心 分布式锁 分布式日志收集 分布式任务调度 服务降级与限流]]></content>
+      <tags>
+        <tag>知识梳理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F04%2F08%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
