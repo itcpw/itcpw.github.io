@@ -412,7 +412,7 @@
             
                 <span class="post-meta-item-text">评论数：</span>
                 <a href="/2017/09/16/mysql/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2017/09/16/mysql/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/09/16/mysql/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -733,6 +733,9 @@
 
   
     <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
     </div>
 
   
@@ -1034,33 +1037,44 @@
 
   
   
+  <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
 
-<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
-
-
-
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 
 <script>
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(function(item) {
-    return GUEST.indexOf(item) > -1;
-  });
-  new Valine({
-    el: '#comments',
-    verify: false,
-    notify: false,
-    appId: 'iAp9YhWSKOhh5oQGcGvnVMgm-gzGzoHsz',
-    appKey: 'gRAeO1f50U1a17J5OKgy6vPy',
-    placeholder: 'Just go go',
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: true,
-    lang: '' || 'zh-cn'
-  });
+  var disqus_config = function() {
+    this.page.url = "http://yoursite.com/2017/09/16/mysql/";
+    this.page.identifier = "2017/09/16/mysql/";
+    this.page.title = 'mysql学习笔记';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    $(function() {
+      var offsetTop = $('#comments').offset().top - $(window).height();
+      if (offsetTop <= 0) {
+        // load directly when there's no a scrollbar
+        loadComments();
+      } else {
+        $(window).on('scroll.disqus_scroll', function() {
+          // offsetTop may changes because of manually resizing browser window or lazy loading images.
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          var scrollTop = $(window).scrollTop();
+
+          // pre-load comments a bit? (margin or anything else)
+          if (offsetTop - scrollTop < 60) {
+            $(window).off('.disqus_scroll');
+            loadComments();
+          }
+        });
+      }
+    });
+  
 </script>
+
 
 
 
