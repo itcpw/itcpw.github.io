@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="作用： 负载均衡—集群（减轻单台服务器压力） 反向代理： 不暴露真实IP地址， 使用Https防止抓包分析Http请求 搭建企业黑名单和白名单系统 模拟请求(csrf业务攻击),XSS,SQL注入 解决ddos(流量攻击)—让别人无法访问 CDN   虚拟服务器 静态服务器(动静分离) 解决跨域问题  优点:性能非常好,占内存小,轻量级服务器,抗住同时5万并发连接 用途:分布式,微服务,高并发,高">
-<meta name="keywords" content="nginx">
+  <meta name="description" content="下载压缩包 tracker和storage使用相同的安装包，下载地址：http://sourceforge.net/projects/FastDFS/ 或 https://github.com/happyfish100/FastDFS（推荐）本教程下载：FastDFS_v5.05.tar.gz  FastDFS安装环境 FastDFS是C语言开发，建议在linux上运行，本教程使用Centos6.">
+<meta name="keywords" content="安装jdk1.8">
 <meta property="og:type" content="article">
-<meta property="og:title" content="nginx学习笔记">
-<meta property="og:url" content="http://yoursite.com/2019/04/08/Nginx/index.html">
+<meta property="og:title" content="CentOS7.5安装jdk1.8">
+<meta property="og:url" content="http://yoursite.com/2018/02/12/CentOs7.5安装fastDFS/index.html">
 <meta property="og:site_name" content="Joker">
-<meta property="og:description" content="作用： 负载均衡—集群（减轻单台服务器压力） 反向代理： 不暴露真实IP地址， 使用Https防止抓包分析Http请求 搭建企业黑名单和白名单系统 模拟请求(csrf业务攻击),XSS,SQL注入 解决ddos(流量攻击)—让别人无法访问 CDN   虚拟服务器 静态服务器(动静分离) 解决跨域问题  优点:性能非常好,占内存小,轻量级服务器,抗住同时5万并发连接 用途:分布式,微服务,高并发,高">
+<meta property="og:description" content="下载压缩包 tracker和storage使用相同的安装包，下载地址：http://sourceforge.net/projects/FastDFS/ 或 https://github.com/happyfish100/FastDFS（推荐）本教程下载：FastDFS_v5.05.tar.gz  FastDFS安装环境 FastDFS是C语言开发，建议在linux上运行，本教程使用Centos6.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-10T02:18:45.175Z">
+<meta property="og:updated_time" content="2019-04-14T11:24:18.503Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="nginx学习笔记">
-<meta name="twitter:description" content="作用： 负载均衡—集群（减轻单台服务器压力） 反向代理： 不暴露真实IP地址， 使用Https防止抓包分析Http请求 搭建企业黑名单和白名单系统 模拟请求(csrf业务攻击),XSS,SQL注入 解决ddos(流量攻击)—让别人无法访问 CDN   虚拟服务器 静态服务器(动静分离) 解决跨域问题  优点:性能非常好,占内存小,轻量级服务器,抗住同时5万并发连接 用途:分布式,微服务,高并发,高">
+<meta name="twitter:title" content="CentOS7.5安装jdk1.8">
+<meta name="twitter:description" content="下载压缩包 tracker和storage使用相同的安装包，下载地址：http://sourceforge.net/projects/FastDFS/ 或 https://github.com/happyfish100/FastDFS（推荐）本教程下载：FastDFS_v5.05.tar.gz  FastDFS安装环境 FastDFS是C语言开发，建议在linux上运行，本教程使用Centos6.">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/04/08/Nginx/">
+  <link rel="canonical" href="http://yoursite.com/2018/02/12/CentOs7.5安装fastDFS/">
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>nginx学习笔记 | Joker</title>
+  <title>CentOS7.5安装jdk1.8 | Joker</title>
   
 
 
@@ -333,7 +333,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/08/Nginx/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/12/CentOs7.5安装fastDFS/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="罗佩文">
@@ -350,7 +350,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">nginx学习笔记
+          <h1 class="post-title" itemprop="name headline">CentOS7.5安装jdk1.8
 
               
             
@@ -376,7 +376,7 @@
                 
               
 
-              <time title="创建时间：2019-04-08 15:49:29" itemprop="dateCreated datePublished" datetime="2019-04-08T15:49:29+08:00">2019-04-08</time>
+              <time title="创建时间：2018-02-12 09:30:17" itemprop="dateCreated datePublished" datetime="2018-02-12T09:30:17+08:00">2018-02-12</time>
             
 
             
@@ -393,7 +393,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-10 10:18:45" itemprop="dateModified" datetime="2019-04-10T10:18:45+08:00">2019-04-10</time>
+                <time title="修改时间：2019-04-14 19:24:18" itemprop="dateModified" datetime="2019-04-14T19:24:18+08:00">2019-04-14</time>
               
             
           </span>
@@ -411,8 +411,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/04/08/Nginx/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/08/Nginx/" itemprop="commentCount"></span>
+                <a href="/2018/02/12/CentOs7.5安装fastDFS/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/02/12/CentOs7.5安装fastDFS/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -420,7 +420,7 @@
 
           
           
-            <span id="/2019/04/08/Nginx/" class="leancloud_visitors" data-flag-title="nginx学习笔记">
+            <span id="/2018/02/12/CentOs7.5安装fastDFS/" class="leancloud_visitors" data-flag-title="CentOS7.5安装jdk1.8">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -451,79 +451,127 @@
       
 
       
-        <h2 id="作用："><a href="#作用：" class="headerlink" title="作用："></a>作用：</h2><ol>
-<li>负载均衡—集群（减轻单台服务器压力）</li>
-<li>反向代理：<ul>
-<li>不暴露真实IP地址，</li>
-<li>使用Https防止抓包分析Http请求</li>
-<li>搭建企业黑名单和白名单系统</li>
-<li>模拟请求(csrf业务攻击),XSS,SQL注入</li>
-<li>解决ddos(流量攻击)—让别人无法访问</li>
-<li>CDN</li>
+        <h2 id="下载压缩包"><a href="#下载压缩包" class="headerlink" title="下载压缩包"></a>下载压缩包</h2><ul>
+<li>tracker和storage使用相同的安装包，下载地址：<a href="http://sourceforge.net/projects/FastDFS/" target="_blank" rel="noopener">http://sourceforge.net/projects/FastDFS/</a> 或 <a href="https://github.com/happyfish100/FastDFS（推荐）本教程下载：FastDFS_v5.05.tar.gz" target="_blank" rel="noopener">https://github.com/happyfish100/FastDFS（推荐）本教程下载：FastDFS_v5.05.tar.gz</a></li>
 </ul>
-</li>
-<li>虚拟服务器</li>
-<li>静态服务器(动静分离)</li>
-<li>解决跨域问题</li>
-</ol>
-<h2 id="优点"><a href="#优点" class="headerlink" title="优点:"></a>优点:</h2><pre><code>性能非常好,占内存小,轻量级服务器,抗住同时5万并发连接
-</code></pre><h2 id="用途"><a href="#用途" class="headerlink" title="用途:"></a>用途:</h2><pre><code>分布式,微服务,高并发,高可用,消息中间件
-</code></pre><h2 id="同类产品"><a href="#同类产品" class="headerlink" title="同类产品:"></a>同类产品:</h2><pre><code>lys(中国人写的),F5(硬件,不是主流),Haproxy
-</code></pre><h2 id="windows安装nginx"><a href="#windows安装nginx" class="headerlink" title="windows安装nginx"></a>windows安装nginx</h2><pre><code>1.nginx默认端口80
-</code></pre><h2 id="配置反向代理服务器"><a href="#配置反向代理服务器" class="headerlink" title="配置反向代理服务器"></a>配置反向代理服务器</h2><ol>
-<li>单台服务器接受高并发情况下,会发生宕机,瘫痪</li>
-<li>高并发解决方案:集群</li>
-<li>集群产生的问题:<ol>
-<li>分布式job幂等性问题,</li>
-<li>会话共享问题 </li>
-<li>分布式生成全局ID </li>
-<li>生成订单ID时间戳,订单号怎么解决幂等性问题,提前生成好,存储在Redis中</li>
-</ol>
-</li>
-<li>分布式锁:多个JVM之间通信,同一时间只有一个JVM生成订单号</li>
-<li>客户端发送请求—&gt;nginx反向代理服务器(负载均衡)–&gt;各种服务</li>
-<li>搭建集群前先搭建反向代理</li>
-</ol>
-<h2 id="配置负载均衡"><a href="#配置负载均衡" class="headerlink" title="配置负载均衡:"></a>配置负载均衡:</h2><ul>
-<li><p>提高网站吞吐量,算法:轮训(机器都相同时使用),IP绑定(一直访问固定一台服务器,会话共享),权重(比例分配,机器配置不同),默认是轮训机制</p>
-</li>
-<li><p>轮训配置:</p>
-</li>
+<h2 id="FastDFS安装环境"><a href="#FastDFS安装环境" class="headerlink" title="FastDFS安装环境"></a>FastDFS安装环境</h2><ul>
+<li>FastDFS是C语言开发，建议在linux上运行，本教程使用Centos6.4作为安装环境。安装FastDFS需要先将官网下载的源码进行编译，编译依赖gcc环境，如果没有gcc环境，需要安装gcc：</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">upstream backserver&#123;</span><br><span class="line">    server 192.168.25.128 ;</span><br><span class="line">    server 192.168.25.129 ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>权重配置:多了个weight属性,按几个服务器weight的值做比例来的</li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install gcc-c++</span><br></pre></td></tr></table></figure>
+<h2 id="安装libevent"><a href="#安装libevent" class="headerlink" title="安装libevent"></a>安装libevent</h2><ul>
+<li>FastDFS依赖libevent库，需要安装：</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">upstream backserver&#123;</span><br><span class="line">    server 192.168.25.128 weight=2;</span><br><span class="line">    server 192.168.25.129 weight=1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>ip绑定:客户端ip地址和服务器地址进行绑定,除非换一台电脑,不然一直访问绑定的ip</li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install libevent</span><br></pre></td></tr></table></figure>
+<h2 id="安装libfastcommon"><a href="#安装libfastcommon" class="headerlink" title="安装libfastcommon"></a>安装libfastcommon</h2><ul>
+<li>libfastcommon是FastDFS官方提供的，libfastcommon包含了FastDFS运行所需要的一些基础库。</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">upstream backserver&#123;</span><br><span class="line">    ip_hash;</span><br><span class="line">    server 192.168.25.128 ;</span><br><span class="line">    server 192.168.25.129 ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="服务器宕机容错机制-高可用"><a href="#服务器宕机容错机制-高可用" class="headerlink" title="服务器宕机容错机制(高可用)"></a>服务器宕机容错机制(高可用)</h3><ul>
-<li>一主一备或者多主多备</li>
-<li><p>配置多台主机和备用机,同时配置多台nginx和和备用nginx,</p>
 <ol>
-<li>服务器宕机,首先keepalived重启脚本重启服务器,如果不行,nginx通过配置会轮询到下一台服务器,</li>
-<li>nginx服务器宕机,就会启动高可用工具keepalive重启脚本,重启多次仍不行,会通知运维人员</li>
-<li>发布新版本的时候,为什么服务器能访问?先给主机发布,再给备机发布</li>
-<li>tomcat发版本的时候session怎么同步?存放在redis或者在数据库中</li>
+<li>将libfastcommonV1.0.7.tar.gz拷贝至/usr/local/下</li>
 </ol>
-</li>
-<li><p>跨域问题:属于前端ajax访问请求域名与浏览器访问的域名地址不相同,存在跨域问题 解决:</p>
-<ol>
-<li>jsoup不支持post请求支持get</li>
-<li>httpClien进行内部转发</li>
-<li>使用http响应头允许跨域设置</li>
-<li>使用nginx搭建企业api接口网关</li>
-<li>使用springcloudzuul接口网关</li>
-</ol>
-</li>
-<li><p>网关:拦截所有请求,进行分发<br>使用nginx搭建企业api接口网关实现原理:域名相同,项目不同,进行拦截跳转到真实服务器中</p>
-</li>
-</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local</span><br><span class="line">tar -zxvf libfastcommonV1.0.7.tar.gz</span><br><span class="line">cd libfastcommon-1.0.7</span><br><span class="line">./make.sh</span><br><span class="line">./make.sh install</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>nginx如何实现高并发<br>就是异步，非阻塞，使用了epoll和大量的底层代码优化。</p>
+<p>注意：libfastcommon安装好后会自动将库文件拷贝至/usr/lib64下，由于FastDFS程序引用usr/lib目录所以需要将/usr/lib64下的库文件拷贝至/usr/lib下。要拷贝的文件如下：libfastcommon.so</p>
 </blockquote>
+<h2 id="tracker编译安装"><a href="#tracker编译安装" class="headerlink" title="tracker编译安装"></a>tracker编译安装</h2><ul>
+<li>安装tracker和storage其实是安装fastdfs然后修改tracker或storage的配置文件</li>
+</ul>
+<ol>
+<li>将FastDFS_v5.05.tar.gz拷贝至/usr/local/下</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf FastDFS_v5.05.tar.gz</span><br><span class="line">cd FastDFS</span><br><span class="line">./make.sh</span><br><span class="line">./make.sh install</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>安装成功将安装目录下的conf下的文件拷贝到/etc/fdfs/下</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp /usr/local/FastDFS/conf/* /etc/fdfs/</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>配置<br>进入/etc/fdfs目录：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vim tracker.conf</span><br><span class="line">vi tracker.conf</span><br><span class="line">base_path=/home/yuqing/fastdfs</span><br></pre></td></tr></table></figure>
+<p>改为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">base_path=/home/fastdfs</span><br></pre></td></tr></table></figure>
+<p>创建fastdfs目录—————–很重要，没有这个文件夹启动不了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir  /home/fastdfs</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>启动tracker</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/fdfs_trackerd /etc/fdfs/tracker.conf restart</span><br></pre></td></tr></table></figure>
+<ol start="5">
+<li>设置开机自动启动</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@instance FastDFS]# vim /etc/rc.d/rc.local</span><br><span class="line">将运行命令行添加进文件：/usr/bin/fdfs_trackerd /etc/fdfs/tracker.conf restart</span><br></pre></td></tr></table></figure>
+<h2 id="FastDFS–storage安装"><a href="#FastDFS–storage安装" class="headerlink" title="FastDFS–storage安装"></a>FastDFS–storage安装</h2><ul>
+<li>原理同trackerd,由于我是把trackerd和storage安装在一个服务器,所以只要安装一次FastDFS,然后修改/etc/fdfs下的storage.conf配置文件即可</li>
+</ul>
+<ol>
+<li>修改storage.conf</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">vi storage.conf</span><br><span class="line">group_name=group1</span><br><span class="line">base_path=/home/yuqing/FastDFS改为：base_path=/home/FastDFS</span><br><span class="line">store_path0=/home/yuqing/FastDFS改为：store_path0=/home/FastDFS/fdfs_storage</span><br><span class="line">mkdir /home/FastDFS/fdfs_storage这一步很关键，没有这个文件夹启动不了</span><br><span class="line">#如果有多个挂载磁盘则定义多个store_path，如下</span><br><span class="line">#store_path1=.....</span><br><span class="line">#store_path2=......</span><br><span class="line">tracker_server=192.168.101.3:22122   #配置tracker服务器:IP</span><br><span class="line">#如果有多个则配置多个tracker</span><br><span class="line">tracker_server=192.168.101.4:22122</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>启动</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/fdfs_storaged /etc/fdfs/storage.conf restart</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>设置开机自动启动</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@instance FastDFS]# vim /etc/rc.d/rc.local</span><br><span class="line">将运行命令行添加进文件：/usr/bin/fdfs_storaged /etc/fdfs/storage.conf restart</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>上传图片测试</li>
+</ol>
+<ul>
+<li>通过fdfs_test程序<br>FastDFS安装成功可通过/usr/bin/fdfs_test测试上传、下载等操作。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">修改/etc/fdfs/client.conf</span><br><span class="line">base_path=/home/fastdfs</span><br><span class="line">tracker_server=192.168.101.3:22122</span><br><span class="line">使用格式：</span><br><span class="line">/usr/bin/fdfs_test 客户端配置文件地址  upload  上传文件</span><br></pre></td></tr></table></figure>
+<ul>
+<li>比如将/home下的图片上传到FastDFS中：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/fdfs_test /etc/fdfs/client.conf upload /home/tomcat.png</span><br><span class="line"></span><br><span class="line">http://192.168.101.3/group1/M00/00/00/wKhlBVVY2M-AM_9DAAAT7-0xdqM485_big.png就是文件的下载路径。</span><br><span class="line">对应storage服务器上的</span><br><span class="line">/home/fastdfs/fdfs_storage/data/00/00/wKhlBVVY2M-AM_9DAAAT7-0xdqM485_big.png文件。</span><br></pre></td></tr></table></figure>
+<p>由于现在还没有和nginx整合无法使用http下载。</p>
+<h2 id="FastDFS和nginx整合"><a href="#FastDFS和nginx整合" class="headerlink" title="FastDFS和nginx整合"></a>FastDFS和nginx整合</h2><ul>
+<li>在Storage上安装nginx</li>
+</ul>
+<ol>
+<li>安装FastDFS-nginx-module:<br>将FastDFS-nginx-module_v1.16.tar.gz传至/usr/local/下</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local</span><br><span class="line">tar -zxvf FastDFS-nginx-module_v1.16.tar.gz</span><br><span class="line">cd FastDFS-nginx-module/src</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>修改config文件将/usr/local/路径改为/usr/—–三处必须都改才行，不然模块编译不进去nginx<br>将FastDFS-nginx-module/src下的mod_FastDFS.conf拷贝至/etc/fdfs/下</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp mod_FastDFS.conf /etc/fdfs/</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>并修改mod_FastDFS.conf的内容：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/fdfs/mod_FastDFS.conf</span><br><span class="line">base_path=/home/FastDFS</span><br><span class="line">tracker_server=192.168.101.3:22122</span><br><span class="line">#tracker_server=192.168.101.4:22122（多个tracker配置多行）</span><br><span class="line">url_have_group_name=true        #url中包含group名称</span><br><span class="line">store_path0=/home/FastDFS/fdfs_storage   #指定文件存储路径</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>将libfdfsclient.so拷贝至/usr/lib下</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp /usr/lib64/libfdfsclient.so /usr/lib/</span><br></pre></td></tr></table></figure>
+<ol start="5">
+<li>创建nginx/client目录</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /var/temp/nginx/client</span><br></pre></td></tr></table></figure>
+<h2 id="nginx安装"><a href="#nginx安装" class="headerlink" title="nginx安装"></a>nginx安装</h2><ol>
+<li>添加FastDFS-nginx-module模块</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">./configure \</span><br><span class="line">--prefix=/usr/local/nginx \</span><br><span class="line">--pid-path=/var/run/nginx/nginx.pid \</span><br><span class="line">--lock-path=/var/lock/nginx.lock \</span><br><span class="line">--error-log-path=/var/log/nginx/error.log \</span><br><span class="line">--http-log-path=/var/log/nginx/access.log \</span><br><span class="line">--with-http_gzip_static_module \</span><br><span class="line">--http-client-body-temp-path=/var/temp/nginx/client \</span><br><span class="line">--http-proxy-temp-path=/var/temp/nginx/proxy \</span><br><span class="line">--http-fastcgi-temp-path=/var/temp/nginx/fastcgi \</span><br><span class="line">--http-uwsgi-temp-path=/var/temp/nginx/uwsgi \</span><br><span class="line">--http-scgi-temp-path=/var/temp/nginx/scgi</span><br><span class="line"></span><br><span class="line">//安装fastdfs-nginx-module是添加这个模块重新编译</span><br><span class="line">--add-module= /usr/local/fastdfs-nginx-module/src  ---这个是根据解压后文件夹路径来的</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>安装</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>添加server:</li>
+</ol>
+<ul>
+<li>修改nginx配置文件</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /usr/local/nginx/conf/nginx.conf</span><br></pre></td></tr></table></figure>
+<ul>
+<li>添加一个server</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">        listen       80;</span><br><span class="line">        server_name  192.168.0.4;</span><br><span class="line"></span><br><span class="line">        location /group1/M00/&#123;</span><br><span class="line">                root /home/FastDFS/fdfs_storage/data/;</span><br><span class="line">                ngx_fastdfs_module;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>说明：server_name指定本机ip<br>location /group1/M00/：group1为nginx 服务FastDFS的分组名称，M00是FastDFS自动生成编号，对应store_path0=/home/FastDFS/fdfs_storage，如果FastDFS定义store_path1，这里就是M01</p>
+</blockquote>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试:"></a>测试:</h2><p>比如我上传的图片地址是:<a href="http://192.168.0.4/group1/M00/00/00/wKgABFyzBhKAGUs6AAA-6HwHHTw944_big.png" target="_blank" rel="noopener">http://192.168.0.4/group1/M00/00/00/wKgABFyzBhKAGUs6AAA-6HwHHTw944_big.png</a><br>我的服务器公网ip是:106.12.18.128,我的服务器inet对应的ip是192.168.0.4,这样我在浏览器地址输入<a href="http://106.12.27.128/group1/M00/00/00/wKgABFyzBhKAGUs6AAA-6HwHHTw944_big.png即可访问到图片" target="_blank" rel="noopener">http://106.12.27.128/group1/M00/00/00/wKgABFyzBhKAGUs6AAA-6HwHHTw944_big.png即可访问到图片</a></p>
 
       
     </div>
@@ -547,7 +595,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/nginx/" rel="tag"># nginx</a>
+            <a href="/tags/安装jdk1-8/" rel="tag"># 安装jdk1.8</a>
           
         </div>
       
@@ -612,8 +660,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/08/知识梳理/" rel="next" title="知识梳理">
-                <i class="fa fa-chevron-left"></i> 知识梳理
+              <a href="/2018/02/12/CentOS7.5安装jdk1.8/" rel="next" title="CentOS7.5安装jdk1.8">
+                <i class="fa fa-chevron-left"></i> CentOS7.5安装jdk1.8
               </a>
             
           </div>
@@ -621,6 +669,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/02/12/CentOS7.5安装nginx/" rel="prev" title="CentOS7.5安装nginx">
+                CentOS7.5安装nginx <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -794,7 +846,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#作用："><span class="nav-number">1.</span> <span class="nav-text">作用：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优点"><span class="nav-number">2.</span> <span class="nav-text">优点:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用途"><span class="nav-number">3.</span> <span class="nav-text">用途:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#同类产品"><span class="nav-number">4.</span> <span class="nav-text">同类产品:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#windows安装nginx"><span class="nav-number">5.</span> <span class="nav-text">windows安装nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置反向代理服务器"><span class="nav-number">6.</span> <span class="nav-text">配置反向代理服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置负载均衡"><span class="nav-number">7.</span> <span class="nav-text">配置负载均衡:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#服务器宕机容错机制-高可用"><span class="nav-number">7.1.</span> <span class="nav-text">服务器宕机容错机制(高可用)</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载压缩包"><span class="nav-number">1.</span> <span class="nav-text">下载压缩包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FastDFS安装环境"><span class="nav-number">2.</span> <span class="nav-text">FastDFS安装环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装libevent"><span class="nav-number">3.</span> <span class="nav-text">安装libevent</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装libfastcommon"><span class="nav-number">4.</span> <span class="nav-text">安装libfastcommon</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tracker编译安装"><span class="nav-number">5.</span> <span class="nav-text">tracker编译安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FastDFS–storage安装"><span class="nav-number">6.</span> <span class="nav-text">FastDFS–storage安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FastDFS和nginx整合"><span class="nav-number">7.</span> <span class="nav-text">FastDFS和nginx整合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nginx安装"><span class="nav-number">8.</span> <span class="nav-text">nginx安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试"><span class="nav-number">9.</span> <span class="nav-text">测试:</span></a></li></ol></div>
             
 
           </div>
