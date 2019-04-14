@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="Linux平台上推荐使用RPM包来安装Mysql,MySQL AB提供了以下RPM包的下载地址： MySQL - MySQL服务器。你需要该选项，除非你只想连接运行在另一台机器上的MySQL服务器。 MySQL-client - MySQL 客户端程序，用于连接并操作Mysql服务器。 MySQL-devel - 库和包含文件，如果你想要编译其它MySQL客户端，例如Perl模块，则需要安装该RP">
-<meta name="keywords" content="mysql安装">
+  <meta name="description" content="下载压缩包 tracker和storage使用相同的安装包，下载地址：http://sourceforge.net/projects/FastDFS/ 或 https://github.com/happyfish100/FastDFS（推荐）本教程下载：FastDFS_v5.05.tar.gz  FastDFS安装环境 FastDFS是C语言开发，建议在linux上运行，本教程使用Centos6.">
+<meta name="keywords" content="安装jdk1.8">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CentOS7.5安装mysql">
-<meta property="og:url" content="http://yoursite.com/2018/02/12/CentOS7.5安装mysql/index.html">
+<meta property="og:title" content="CentOS7.5安装jdk1.8">
+<meta property="og:url" content="http://yoursite.com/2019/04/14/CentOs7.5安装fastDFS/index.html">
 <meta property="og:site_name" content="Joker">
-<meta property="og:description" content="Linux平台上推荐使用RPM包来安装Mysql,MySQL AB提供了以下RPM包的下载地址： MySQL - MySQL服务器。你需要该选项，除非你只想连接运行在另一台机器上的MySQL服务器。 MySQL-client - MySQL 客户端程序，用于连接并操作Mysql服务器。 MySQL-devel - 库和包含文件，如果你想要编译其它MySQL客户端，例如Perl模块，则需要安装该RP">
+<meta property="og:description" content="下载压缩包 tracker和storage使用相同的安装包，下载地址：http://sourceforge.net/projects/FastDFS/ 或 https://github.com/happyfish100/FastDFS（推荐）本教程下载：FastDFS_v5.05.tar.gz  FastDFS安装环境 FastDFS是C语言开发，建议在linux上运行，本教程使用Centos6.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-14T07:41:42.411Z">
+<meta property="og:updated_time" content="2019-04-14T12:19:43.484Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CentOS7.5安装mysql">
-<meta name="twitter:description" content="Linux平台上推荐使用RPM包来安装Mysql,MySQL AB提供了以下RPM包的下载地址： MySQL - MySQL服务器。你需要该选项，除非你只想连接运行在另一台机器上的MySQL服务器。 MySQL-client - MySQL 客户端程序，用于连接并操作Mysql服务器。 MySQL-devel - 库和包含文件，如果你想要编译其它MySQL客户端，例如Perl模块，则需要安装该RP">
+<meta name="twitter:title" content="CentOS7.5安装jdk1.8">
+<meta name="twitter:description" content="下载压缩包 tracker和storage使用相同的安装包，下载地址：http://sourceforge.net/projects/FastDFS/ 或 https://github.com/happyfish100/FastDFS（推荐）本教程下载：FastDFS_v5.05.tar.gz  FastDFS安装环境 FastDFS是C语言开发，建议在linux上运行，本教程使用Centos6.">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2018/02/12/CentOS7.5安装mysql/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/14/CentOs7.5安装fastDFS/">
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>CentOS7.5安装mysql | Joker</title>
+  <title>CentOS7.5安装jdk1.8 | Joker</title>
   
 
 
@@ -333,7 +333,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/12/CentOS7.5安装mysql/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/14/CentOs7.5安装fastDFS/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="罗佩文">
@@ -350,7 +350,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CentOS7.5安装mysql
+          <h1 class="post-title" itemprop="name headline">CentOS7.5安装jdk1.8
 
               
             
@@ -376,24 +376,12 @@
                 
               
 
-              <time title="创建时间：2018-02-12 09:30:17" itemprop="dateCreated datePublished" datetime="2018-02-12T09:30:17+08:00">2018-02-12</time>
+              <time title="创建时间：2019-04-14 20:19:18 / 修改时间：20:19:43" itemprop="dateCreated datePublished" datetime="2019-04-14T20:19:18+08:00">2019-04-14</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-14 15:41:42" itemprop="dateModified" datetime="2019-04-14T15:41:42+08:00">2019-04-14</time>
               
             
           </span>
@@ -411,8 +399,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2018/02/12/CentOS7.5安装mysql/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/02/12/CentOS7.5安装mysql/" itemprop="commentCount"></span>
+                <a href="/2019/04/14/CentOs7.5安装fastDFS/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/14/CentOs7.5安装fastDFS/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -420,7 +408,7 @@
 
           
           
-            <span id="/2018/02/12/CentOS7.5安装mysql/" class="leancloud_visitors" data-flag-title="CentOS7.5安装mysql">
+            <span id="/2019/04/14/CentOs7.5安装fastDFS/" class="leancloud_visitors" data-flag-title="CentOS7.5安装jdk1.8">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -451,92 +439,127 @@
       
 
       
-        <h1 id="Linux平台上推荐使用RPM包来安装Mysql-MySQL-AB提供了以下RPM包的下载地址："><a href="#Linux平台上推荐使用RPM包来安装Mysql-MySQL-AB提供了以下RPM包的下载地址：" class="headerlink" title="Linux平台上推荐使用RPM包来安装Mysql,MySQL AB提供了以下RPM包的下载地址："></a>Linux平台上推荐使用RPM包来安装Mysql,MySQL AB提供了以下RPM包的下载地址：</h1><ul>
-<li>MySQL - MySQL服务器。你需要该选项，除非你只想连接运行在另一台机器上的MySQL服务器。</li>
-<li>MySQL-client - MySQL 客户端程序，用于连接并操作Mysql服务器。</li>
-<li>MySQL-devel - 库和包含文件，如果你想要编译其它MySQL客户端，例如Perl模块，则需要安装该RPM包。</li>
-<li>MySQL-shared - 该软件包包含某些语言和应用程序需要动态装载的共享库(libmysqlclient.so*)，使用MySQL。</li>
-<li>MySQL-bench - MySQL数据库服务器的基准和性能测试工具。</li>
+        <h2 id="下载压缩包"><a href="#下载压缩包" class="headerlink" title="下载压缩包"></a>下载压缩包</h2><ul>
+<li>tracker和storage使用相同的安装包，下载地址：<a href="http://sourceforge.net/projects/FastDFS/" target="_blank" rel="noopener">http://sourceforge.net/projects/FastDFS/</a> 或 <a href="https://github.com/happyfish100/FastDFS（推荐）本教程下载：FastDFS_v5.05.tar.gz" target="_blank" rel="noopener">https://github.com/happyfish100/FastDFS（推荐）本教程下载：FastDFS_v5.05.tar.gz</a></li>
 </ul>
-<h2 id="安装前"><a href="#安装前" class="headerlink" title="安装前"></a>安装前</h2><ol>
-<li>我们可以检测系统是否自带安装 MySQL:</li>
-</ol>
-<p><code>rpm -qa | grep mysql</code></p>
-<ol start="2">
-<li>如果你系统有安装，那可以选择进行卸载:</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rpm -e mysql　　// 普通删除模式</span><br><span class="line">rpm -e --nodeps mysql　　// 强力删除模式，如果使用上面命令删除时，提示有依赖的其它文件，则用该命令可以对其进行强力删除</span><br></pre></td></tr></table></figure>
-<h2 id="安装-MySQL："><a href="#安装-MySQL：" class="headerlink" title="安装 MySQL："></a>安装 MySQL：</h2><ol>
-<li>接下来我们在 Centos7 系统下使用 yum 命令安装 MySQL，需要注意的是 CentOS 7 版本中 MySQL数据库已从默认的程序列表中移除，所以在安装前我们需要先去官网下载 Yum 资源包，下载地址为：<a href="https://dev.mysql.com/downloads/repo/yum/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/repo/yum/</a></li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm</span><br><span class="line">rpm -ivh mysql-community-release-el7-5.noarch.rpm</span><br><span class="line">yum update</span><br><span class="line">yum install mysql-server</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li><p>权限设置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown mysql:mysql -R /var/lib/mysql</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>初始化 MySQL：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>启动 MySQL：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start mysqld</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看 MySQL 运行状态：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status mysqld</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<blockquote>
-<p>注意：如果我们是第一次启动 mysql 服务，mysql 服务器首先会进行初始化的配置。</p>
-</blockquote>
-<h2 id="验证-MySQL-安装"><a href="#验证-MySQL-安装" class="headerlink" title="验证 MySQL 安装"></a>验证 MySQL 安装</h2><ol>
-<li>在成功安装 MySQL 后，一些基础表会表初始化，在服务器启动后，你可以通过简单的测试来验证 MySQL 是否工作正常。使用 mysqladmin 工具来获取服务器状态：<br>使用 mysqladmin 命令俩检查服务器的版本, 在 linux 上该二进制文件位于 /usr/bin 目录，在 Windows 上该二进制文件位于C:\mysql\bin.</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@host]# mysqladmin --version</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>linux上该命令将输出以下结果，该结果基于你的系统信息：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqladmin  Ver 8.42 Distrib 5.6.43, for Linux on x86_64</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>如果以上命令执行后未输入任何信息，说明你的Mysql未安装成功。</p>
-</blockquote>
-<h2 id="Mysql安装后需要做的"><a href="#Mysql安装后需要做的" class="headerlink" title="Mysql安装后需要做的"></a>Mysql安装后需要做的</h2><ol>
-<li>Mysql安装成功后，默认的root用户密码为空，你可以使用以下命令来创建root用户的密码：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@host]# mysqladmin -u root password &quot;new_password&quot;;</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>现在你可以通过以下命令来连接到Mysql服务器：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@host]# mysql -u root -p</span><br><span class="line">Enter password:*******</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>注意：在输入密码时，密码是不会显示了，你正确输入即可。</p>
-</blockquote>
-<h2 id="设置开机自启动"><a href="#设置开机自启动" class="headerlink" title="设置开机自启动"></a>设置开机自启动</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/rc.local</span><br><span class="line">添加service mysqld start</span><br></pre></td></tr></table></figure>
-<h2 id="远程连接"><a href="#远程连接" class="headerlink" title="远程连接"></a>远程连接</h2><ul>
-<li>这里是用的navcat连接mysql</li>
-<li><p>遇到个问题:Host ‘xxx’ is not allowed to connect to this MySQL server 这里原因是因为root用户没有开启远程登录的权限</p>
+<h2 id="FastDFS安装环境"><a href="#FastDFS安装环境" class="headerlink" title="FastDFS安装环境"></a>FastDFS安装环境</h2><ul>
+<li>FastDFS是C语言开发，建议在linux上运行，本教程使用Centos6.4作为安装环境。安装FastDFS需要先将官网下载的源码进行编译，编译依赖gcc环境，如果没有gcc环境，需要安装gcc：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install gcc-c++</span><br></pre></td></tr></table></figure>
+<h2 id="安装libevent"><a href="#安装libevent" class="headerlink" title="安装libevent"></a>安装libevent</h2><ul>
+<li>FastDFS依赖libevent库，需要安装：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install libevent</span><br></pre></td></tr></table></figure>
+<h2 id="安装libfastcommon"><a href="#安装libfastcommon" class="headerlink" title="安装libfastcommon"></a>安装libfastcommon</h2><ul>
+<li>libfastcommon是FastDFS官方提供的，libfastcommon包含了FastDFS运行所需要的一些基础库。</li>
+</ul>
 <ol>
-<li><p>我们给用户授权:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grant all PRIVILEGES on test_db.* to root@&apos;192.168.1.101&apos;  identified by &apos;123456&apos;;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>执行了上面的语句后，再执行下面的语句，方可立即生效。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flush privileges;</span><br></pre></td></tr></table></figure>
-</li>
+<li>将libfastcommonV1.0.7.tar.gz拷贝至/usr/local/下</li>
 </ol>
-</li>
-<li><p>上面的语句表示将 test_db 数据库的所有权限授权给 root 这个用户，允许 root 用户在 192.168.1.101 这个 IP 进行远程登陆，并设置 root 用户的密码为 123456 。<br>下面逐一分析所有的参数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local</span><br><span class="line">tar -zxvf libfastcommonV1.0.7.tar.gz</span><br><span class="line">cd libfastcommon-1.0.7</span><br><span class="line">./make.sh</span><br><span class="line">./make.sh install</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意：libfastcommon安装好后会自动将库文件拷贝至/usr/lib64下，由于FastDFS程序引用usr/lib目录所以需要将/usr/lib64下的库文件拷贝至/usr/lib下。要拷贝的文件如下：libfastcommon.so</p>
+</blockquote>
+<h2 id="tracker编译安装"><a href="#tracker编译安装" class="headerlink" title="tracker编译安装"></a>tracker编译安装</h2><ul>
+<li>安装tracker和storage其实是安装fastdfs然后修改tracker或storage的配置文件</li>
+</ul>
+<ol>
+<li>将FastDFS_v5.05.tar.gz拷贝至/usr/local/下</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf FastDFS_v5.05.tar.gz</span><br><span class="line">cd FastDFS</span><br><span class="line">./make.sh</span><br><span class="line">./make.sh install</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>安装成功将安装目录下的conf下的文件拷贝到/etc/fdfs/下</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp /usr/local/FastDFS/conf/* /etc/fdfs/</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>配置<br>进入/etc/fdfs目录：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vim tracker.conf</span><br><span class="line">vi tracker.conf</span><br><span class="line">base_path=/home/yuqing/fastdfs</span><br></pre></td></tr></table></figure>
+<p>改为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">base_path=/home/fastdfs</span><br></pre></td></tr></table></figure>
+<p>创建fastdfs目录—————–很重要，没有这个文件夹启动不了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir  /home/fastdfs</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>启动tracker</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/fdfs_trackerd /etc/fdfs/tracker.conf restart</span><br></pre></td></tr></table></figure>
+<ol start="5">
+<li>设置开机自动启动</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@instance FastDFS]# vim /etc/rc.d/rc.local</span><br><span class="line">将运行命令行添加进文件：/usr/bin/fdfs_trackerd /etc/fdfs/tracker.conf restart</span><br></pre></td></tr></table></figure>
+<h2 id="FastDFS–storage安装"><a href="#FastDFS–storage安装" class="headerlink" title="FastDFS–storage安装"></a>FastDFS–storage安装</h2><ul>
+<li>原理同trackerd,由于我是把trackerd和storage安装在一个服务器,所以只要安装一次FastDFS,然后修改/etc/fdfs下的storage.conf配置文件即可</li>
+</ul>
+<ol>
+<li>修改storage.conf</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">vi storage.conf</span><br><span class="line">group_name=group1</span><br><span class="line">base_path=/home/yuqing/FastDFS改为：base_path=/home/FastDFS</span><br><span class="line">store_path0=/home/yuqing/FastDFS改为：store_path0=/home/FastDFS/fdfs_storage</span><br><span class="line">mkdir /home/FastDFS/fdfs_storage这一步很关键，没有这个文件夹启动不了</span><br><span class="line">#如果有多个挂载磁盘则定义多个store_path，如下</span><br><span class="line">#store_path1=.....</span><br><span class="line">#store_path2=......</span><br><span class="line">tracker_server=192.168.101.3:22122   #配置tracker服务器:IP</span><br><span class="line">#如果有多个则配置多个tracker</span><br><span class="line">tracker_server=192.168.101.4:22122</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>启动</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/fdfs_storaged /etc/fdfs/storage.conf restart</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>设置开机自动启动</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@instance FastDFS]# vim /etc/rc.d/rc.local</span><br><span class="line">将运行命令行添加进文件：/usr/bin/fdfs_storaged /etc/fdfs/storage.conf restart</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>上传图片测试</li>
+</ol>
 <ul>
-<li><p>all PRIVILEGES 表示赋予所有的权限给指定用户，这里也可以替换为赋予某一具体的权限，例如select,insert,update,delete,create,drop 等，具体权限间用“,”半角逗号分隔。</p>
-</li>
-<li><p>test_db.<em> 表示上面的权限是针对于哪个表的，test_db指的是数据库，后面的 </em> 表示对于所有的表，由此可以推理出：对于全部数据库的全部表授权为“<em>.</em>”，对于某一数据库的全部表授权为“数据库名.*”，对于某一数据库的某一表授权为“数据库名.表名”。</p>
-</li>
-<li><p>root 表示你要给哪个用户授权，这个用户可以是存在的用户，也可以是不存在的用户。</p>
-</li>
-<li><p>192.168.1.101 表示允许远程连接的 IP 地址，如果想不限制链接的 IP 则设置为“%”即可。</p>
-</li>
-<li><p>123456 为用户的密码。</p>
-</li>
+<li>通过fdfs_test程序<br>FastDFS安装成功可通过/usr/bin/fdfs_test测试上传、下载等操作。</li>
 </ul>
-</li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">修改/etc/fdfs/client.conf</span><br><span class="line">base_path=/home/fastdfs</span><br><span class="line">tracker_server=192.168.101.3:22122</span><br><span class="line">使用格式：</span><br><span class="line">/usr/bin/fdfs_test 客户端配置文件地址  upload  上传文件</span><br></pre></td></tr></table></figure>
+<ul>
+<li>比如将/home下的图片上传到FastDFS中：</li>
 </ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/fdfs_test /etc/fdfs/client.conf upload /home/tomcat.png</span><br><span class="line"></span><br><span class="line">http://192.168.101.3/group1/M00/00/00/wKhlBVVY2M-AM_9DAAAT7-0xdqM485_big.png就是文件的下载路径。</span><br><span class="line">对应storage服务器上的</span><br><span class="line">/home/fastdfs/fdfs_storage/data/00/00/wKhlBVVY2M-AM_9DAAAT7-0xdqM485_big.png文件。</span><br></pre></td></tr></table></figure>
+<p>由于现在还没有和nginx整合无法使用http下载。</p>
+<h2 id="FastDFS和nginx整合"><a href="#FastDFS和nginx整合" class="headerlink" title="FastDFS和nginx整合"></a>FastDFS和nginx整合</h2><ul>
+<li>在Storage上安装nginx</li>
+</ul>
+<ol>
+<li>安装FastDFS-nginx-module:<br>将FastDFS-nginx-module_v1.16.tar.gz传至/usr/local/下</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local</span><br><span class="line">tar -zxvf FastDFS-nginx-module_v1.16.tar.gz</span><br><span class="line">cd FastDFS-nginx-module/src</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>修改config文件将/usr/local/路径改为/usr/—–三处必须都改才行，不然模块编译不进去nginx<br>将FastDFS-nginx-module/src下的mod_FastDFS.conf拷贝至/etc/fdfs/下</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp mod_FastDFS.conf /etc/fdfs/</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>并修改mod_FastDFS.conf的内容：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/fdfs/mod_FastDFS.conf</span><br><span class="line">base_path=/home/FastDFS</span><br><span class="line">tracker_server=192.168.101.3:22122</span><br><span class="line">#tracker_server=192.168.101.4:22122（多个tracker配置多行）</span><br><span class="line">url_have_group_name=true        #url中包含group名称</span><br><span class="line">store_path0=/home/FastDFS/fdfs_storage   #指定文件存储路径</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>将libfdfsclient.so拷贝至/usr/lib下</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp /usr/lib64/libfdfsclient.so /usr/lib/</span><br></pre></td></tr></table></figure>
+<ol start="5">
+<li>创建nginx/client目录</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /var/temp/nginx/client</span><br></pre></td></tr></table></figure>
+<h2 id="nginx安装"><a href="#nginx安装" class="headerlink" title="nginx安装"></a>nginx安装</h2><ol>
+<li>添加FastDFS-nginx-module模块</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">./configure \</span><br><span class="line">--prefix=/usr/local/nginx \</span><br><span class="line">--pid-path=/var/run/nginx/nginx.pid \</span><br><span class="line">--lock-path=/var/lock/nginx.lock \</span><br><span class="line">--error-log-path=/var/log/nginx/error.log \</span><br><span class="line">--http-log-path=/var/log/nginx/access.log \</span><br><span class="line">--with-http_gzip_static_module \</span><br><span class="line">--http-client-body-temp-path=/var/temp/nginx/client \</span><br><span class="line">--http-proxy-temp-path=/var/temp/nginx/proxy \</span><br><span class="line">--http-fastcgi-temp-path=/var/temp/nginx/fastcgi \</span><br><span class="line">--http-uwsgi-temp-path=/var/temp/nginx/uwsgi \</span><br><span class="line">--http-scgi-temp-path=/var/temp/nginx/scgi</span><br><span class="line"></span><br><span class="line">//安装fastdfs-nginx-module是添加这个模块重新编译</span><br><span class="line">--add-module= /usr/local/fastdfs-nginx-module/src  ---这个是根据解压后文件夹路径来的</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>安装</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>添加server:</li>
+</ol>
+<ul>
+<li>修改nginx配置文件</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /usr/local/nginx/conf/nginx.conf</span><br></pre></td></tr></table></figure>
+<ul>
+<li>添加一个server</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">        listen       80;</span><br><span class="line">        server_name  192.168.0.4;</span><br><span class="line"></span><br><span class="line">        location /group1/M00/&#123;</span><br><span class="line">                root /home/FastDFS/fdfs_storage/data/;</span><br><span class="line">                ngx_fastdfs_module;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>说明：server_name指定本机ip<br>location /group1/M00/：group1为nginx 服务FastDFS的分组名称，M00是FastDFS自动生成编号，对应store_path0=/home/FastDFS/fdfs_storage，如果FastDFS定义store_path1，这里就是M01</p>
+</blockquote>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试:"></a>测试:</h2><p>比如我上传的图片地址是:<a href="http://192.168.0.4/group1/M00/00/00/wKgABFyzBhKAGUs6AAA-6HwHHTw944_big.png" target="_blank" rel="noopener">http://192.168.0.4/group1/M00/00/00/wKgABFyzBhKAGUs6AAA-6HwHHTw944_big.png</a><br>我的服务器公网ip是:106.12.18.128,我的服务器inet对应的ip是192.168.0.4,这样我在浏览器地址输入<a href="http://106.12.27.128/group1/M00/00/00/wKgABFyzBhKAGUs6AAA-6HwHHTw944_big.png即可访问到图片" target="_blank" rel="noopener">http://106.12.27.128/group1/M00/00/00/wKgABFyzBhKAGUs6AAA-6HwHHTw944_big.png即可访问到图片</a></p>
 
       
     </div>
@@ -560,7 +583,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/mysql安装/" rel="tag"># mysql安装</a>
+            <a href="/tags/安装jdk1-8/" rel="tag"># 安装jdk1.8</a>
           
         </div>
       
@@ -625,8 +648,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/12/CentOS7.5安装nginx/" rel="next" title="CentOS7.5安装nginx">
-                <i class="fa fa-chevron-left"></i> CentOS7.5安装nginx
+              <a href="/2019/04/14/CentOS7.5安装mysql/" rel="next" title="CentOS7.5安装mysql">
+                <i class="fa fa-chevron-left"></i> CentOS7.5安装mysql
               </a>
             
           </div>
@@ -635,8 +658,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/20/lucene/" rel="prev" title="lucene">
-                lucene <i class="fa fa-chevron-right"></i>
+              <a href="/2019/04/14/CentOS7.5安装jdk1.8/" rel="prev" title="CentOS7.5安装jdk1.8">
+                CentOS7.5安装jdk1.8 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -811,7 +834,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux平台上推荐使用RPM包来安装Mysql-MySQL-AB提供了以下RPM包的下载地址："><span class="nav-number">1.</span> <span class="nav-text">Linux平台上推荐使用RPM包来安装Mysql,MySQL AB提供了以下RPM包的下载地址：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装前"><span class="nav-number">1.1.</span> <span class="nav-text">安装前</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-MySQL："><span class="nav-number">1.2.</span> <span class="nav-text">安装 MySQL：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#验证-MySQL-安装"><span class="nav-number">1.3.</span> <span class="nav-text">验证 MySQL 安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mysql安装后需要做的"><span class="nav-number">1.4.</span> <span class="nav-text">Mysql安装后需要做的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置开机自启动"><span class="nav-number">1.5.</span> <span class="nav-text">设置开机自启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#远程连接"><span class="nav-number">1.6.</span> <span class="nav-text">远程连接</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载压缩包"><span class="nav-number">1.</span> <span class="nav-text">下载压缩包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FastDFS安装环境"><span class="nav-number">2.</span> <span class="nav-text">FastDFS安装环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装libevent"><span class="nav-number">3.</span> <span class="nav-text">安装libevent</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装libfastcommon"><span class="nav-number">4.</span> <span class="nav-text">安装libfastcommon</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tracker编译安装"><span class="nav-number">5.</span> <span class="nav-text">tracker编译安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FastDFS–storage安装"><span class="nav-number">6.</span> <span class="nav-text">FastDFS–storage安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FastDFS和nginx整合"><span class="nav-number">7.</span> <span class="nav-text">FastDFS和nginx整合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nginx安装"><span class="nav-number">8.</span> <span class="nav-text">nginx安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试"><span class="nav-number">9.</span> <span class="nav-text">测试:</span></a></li></ol></div>
             
 
           </div>
