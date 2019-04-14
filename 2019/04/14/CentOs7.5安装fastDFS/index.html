@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="常用命令： 启动mysql：net start mysql; 登录本机：mysql -u root -p; mysql -hip -uroot -proot;  创建：  创建数据库：create database db1; 创建数据库2：create database if not exists db2;  `create database db3 character set gbk;`   `">
-<meta name="keywords" content="mysql">
+  <meta name="description" content="下载压缩包 tracker和storage使用相同的安装包，下载地址：http://sourceforge.net/projects/FastDFS/ 或 https://github.com/happyfish100/FastDFS（推荐）本教程下载：FastDFS_v5.05.tar.gz  FastDFS安装环境 FastDFS是C语言开发，建议在linux上运行，本教程使用Centos6.">
+<meta name="keywords" content="fastDFS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mysql学习笔记">
-<meta property="og:url" content="http://yoursite.com/2017/09/16/mysql/index.html">
+<meta property="og:title" content="CentOS7.5安装fastDFS">
+<meta property="og:url" content="http://yoursite.com/2019/04/14/CentOs7.5安装fastDFS/index.html">
 <meta property="og:site_name" content="Joker">
-<meta property="og:description" content="常用命令： 启动mysql：net start mysql; 登录本机：mysql -u root -p; mysql -hip -uroot -proot;  创建：  创建数据库：create database db1; 创建数据库2：create database if not exists db2;  `create database db3 character set gbk;`   `">
+<meta property="og:description" content="下载压缩包 tracker和storage使用相同的安装包，下载地址：http://sourceforge.net/projects/FastDFS/ 或 https://github.com/happyfish100/FastDFS（推荐）本教程下载：FastDFS_v5.05.tar.gz  FastDFS安装环境 FastDFS是C语言开发，建议在linux上运行，本教程使用Centos6.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-10T03:24:10.377Z">
+<meta property="og:updated_time" content="2019-04-14T12:27:17.319Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mysql学习笔记">
-<meta name="twitter:description" content="常用命令： 启动mysql：net start mysql; 登录本机：mysql -u root -p; mysql -hip -uroot -proot;  创建：  创建数据库：create database db1; 创建数据库2：create database if not exists db2;  `create database db3 character set gbk;`   `">
+<meta name="twitter:title" content="CentOS7.5安装fastDFS">
+<meta name="twitter:description" content="下载压缩包 tracker和storage使用相同的安装包，下载地址：http://sourceforge.net/projects/FastDFS/ 或 https://github.com/happyfish100/FastDFS（推荐）本教程下载：FastDFS_v5.05.tar.gz  FastDFS安装环境 FastDFS是C语言开发，建议在linux上运行，本教程使用Centos6.">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2017/09/16/mysql/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/14/CentOs7.5安装fastDFS/">
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>mysql学习笔记 | Joker</title>
+  <title>CentOS7.5安装fastDFS | Joker</title>
   
 
 
@@ -333,7 +333,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/16/mysql/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/14/CentOs7.5安装fastDFS/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="罗佩文">
@@ -350,7 +350,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">mysql学习笔记
+          <h1 class="post-title" itemprop="name headline">CentOS7.5安装fastDFS
 
               
             
@@ -376,24 +376,12 @@
                 
               
 
-              <time title="创建时间：2017-09-16 19:25:20" itemprop="dateCreated datePublished" datetime="2017-09-16T19:25:20+08:00">2017-09-16</time>
+              <time title="创建时间：2019-04-14 20:19:18 / 修改时间：20:27:17" itemprop="dateCreated datePublished" datetime="2019-04-14T20:19:18+08:00">2019-04-14</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-10 11:24:10" itemprop="dateModified" datetime="2019-04-10T11:24:10+08:00">2019-04-10</time>
               
             
           </span>
@@ -411,8 +399,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2017/09/16/mysql/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2017/09/16/mysql/" itemprop="commentCount"></span>
+                <a href="/2019/04/14/CentOs7.5安装fastDFS/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/14/CentOs7.5安装fastDFS/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -420,7 +408,7 @@
 
           
           
-            <span id="/2017/09/16/mysql/" class="leancloud_visitors" data-flag-title="mysql学习笔记">
+            <span id="/2019/04/14/CentOs7.5安装fastDFS/" class="leancloud_visitors" data-flag-title="CentOS7.5安装fastDFS">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -451,164 +439,127 @@
       
 
       
-        <h2 id="常用命令："><a href="#常用命令：" class="headerlink" title="常用命令："></a>常用命令：</h2><ol>
-<li>启动mysql：<code>net start mysql;</code></li>
-<li><p>登录本机：<code>mysql -u root -p;</code><br> <code>mysql -hip -uroot -proot;</code></p>
-</li>
-<li><p>创建：</p>
-<ul>
-<li>创建数据库：<code>create database db1;</code></li>
-<li>创建数据库2：<code>create database if not exists db2;</code>  <pre><code>`create database db3 character set gbk;`  
-`create database if not exists db3 character set gbk;`
-</code></pre></li>
+        <h2 id="下载压缩包"><a href="#下载压缩包" class="headerlink" title="下载压缩包"></a>下载压缩包</h2><ul>
+<li>tracker和storage使用相同的安装包，下载地址：<a href="http://sourceforge.net/projects/FastDFS/" target="_blank" rel="noopener">http://sourceforge.net/projects/FastDFS/</a> 或 <a href="https://github.com/happyfish100/FastDFS（推荐）本教程下载：FastDFS_v5.05.tar.gz" target="_blank" rel="noopener">https://github.com/happyfish100/FastDFS（推荐）本教程下载：FastDFS_v5.05.tar.gz</a></li>
 </ul>
-</li>
-<li><p>查询：</p>
-<ul>
-<li>查询数据库：<code>show databases;</code></li>
-<li>查询某一数据库：<code>show create database db1;</code></li>
+<h2 id="FastDFS安装环境"><a href="#FastDFS安装环境" class="headerlink" title="FastDFS安装环境"></a>FastDFS安装环境</h2><ul>
+<li>FastDFS是C语言开发，建议在linux上运行，本教程使用Centos6.4作为安装环境。安装FastDFS需要先将官网下载的源码进行编译，编译依赖gcc环境，如果没有gcc环境，需要安装gcc：</li>
 </ul>
-</li>
-<li><p>修改：<br>修改数据库字符格式：<code>alter database db1 character set gbk;</code></p>
-</li>
-<li><p>删除：<br><code>drop database db1;</code><br><code>drop database if exists db1;</code></p>
-</li>
-<li><p>使用数据库：</p>
-<ul>
-<li>查询当前数据库名称：<code>select database();</code></li>
-<li>选择数据库:use db1;</li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install gcc-c++</span><br></pre></td></tr></table></figure>
+<h2 id="安装libevent"><a href="#安装libevent" class="headerlink" title="安装libevent"></a>安装libevent</h2><ul>
+<li>FastDFS依赖libevent库，需要安装：</li>
 </ul>
-</li>
-<li><p>操作表：</p>
-</li>
-</ol>
-<ul>
-<li>查询数据库中所有表名称：<code>show tables;</code></li>
-<li>查询表结构：<code>desc 表名；</code><br><code>select * from 表名；</code></li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install libevent</span><br></pre></td></tr></table></figure>
+<h2 id="安装libfastcommon"><a href="#安装libfastcommon" class="headerlink" title="安装libfastcommon"></a>安装libfastcommon</h2><ul>
+<li>libfastcommon是FastDFS官方提供的，libfastcommon包含了FastDFS运行所需要的一些基础库。</li>
 </ul>
-<ol start="9">
-<li><p>创建表：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">create table 表名(</span><br><span class="line">      列名1 数据类型1，</span><br><span class="line">      列名2 数据类型2</span><br><span class="line">)；</span><br><span class="line">create table student(</span><br><span class="line">	id int,</span><br><span class="line">	name varchar(32),</span><br><span class="line">	age int,</span><br><span class="line">	score double(4,1),</span><br><span class="line">	birthday date,</span><br><span class="line">	insert_time timestamp</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>复制表：<code>create table 表名 like 表名；</code></p>
-</li>
-<li><p>删除表：<code>drop table 表名；</code><br><code>drop table if exists 表名;</code></p>
-</li>
-<li><p>修改表：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">修改表名：</span><br><span class="line">alter table  旧表名 rename to 新表名;</span><br><span class="line">查看表的字符集：</span><br><span class="line">alter table 表名 character set 字符集名称；</span><br><span class="line">添加一列：</span><br><span class="line">alter table 表名 add 列名 数据类型；</span><br><span class="line">修改名称 类型：</span><br><span class="line">alter table 表名 change 列名 新列名 新数据类型；//改变新的一种类型的列</span><br><span class="line">alter table 表名 modify 列名 新数据类型；//只改变列的名称</span><br><span class="line">删除列：</span><br><span class="line">alter table 表名 drop 列名;</span><br><span class="line"></span><br><span class="line">添加数据：INSERT INTO student(id,NAME,age,score) VALUES(2015,&apos;tom&apos;,18,85.5);</span><br><span class="line">删除一行数据：DELETE FROM student WHERE id=2015;</span><br><span class="line">注意：全删数据：DELETE FROM student ;效率低，表头也删了</span><br><span class="line">truncate table 表名：删除表，并创建一模一样的空表；</span><br><span class="line"></span><br><span class="line">修改数据：</span><br><span class="line">UPDATE student SET age=22,score=80.5 WHERE id=2015;</span><br><span class="line">UPDATE student SET age=22；全部修改</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查询数据</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">and or not is null</span><br><span class="line">SELECT DISTINCT adress FROM student ;</span><br><span class="line">SELECT math,english ,math+IFNULL(english,0) AS 总分 FROM student;</span><br><span class="line">SELECT math 数学,english 英语,math+IFNULL(english,0) 总分 FROM student;</span><br><span class="line">SELECT * FROM student WHERE age IN(18,20,25);</span><br><span class="line">SELECT * FROM student WHERE age&gt;=20;</span><br><span class="line">SELECT * FROM student WHERE NAME LIKE &apos;麦%&apos;;</span><br><span class="line">SELECT * FROM student WHERE NAME LIKE &apos;_邦%&apos;;</span><br><span class="line">SELECT * FROM student WHERE NAME LIKE &apos;___&apos;;</span><br><span class="line">SELECT * FROM student WHERE NAME LIKE &apos;%冰%&apos;;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="DQL查询"><a href="#DQL查询" class="headerlink" title="DQL查询"></a>DQL查询</h2><p>SELECT * FROM student ORDER  BY math ASC，english DESC;</p>
 <ol>
-<li><p>选择偶数行,奇数行:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select * from where mod(id,2)=0;</span><br><span class="line">select * from where mod(id,2)=1;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>聚合函数：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1、count: select count(math) from student;</span><br><span class="line">	选择非空的列进行计算</span><br><span class="line">	ifnull函数：SELECT COUNT(IFNULL(english,0)) FROM student;</span><br><span class="line">2、sum：SELECT SUM(english) FROM student;</span><br><span class="line">3、max：SELECT MAX(english) FROM student;</span><br><span class="line">4、min：</span><br><span class="line">5、avg：</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>分组查询：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">查询男女同学的数学平均分：SELECT sex,AVG(math) FROM student GROUP BY sex;</span><br><span class="line">SELECT sex,AVG(math) FROM student WHERE math&gt;70 GROUP BY sex;</span><br><span class="line">SELECT sex,AVG(math) FROM student WHERE math&gt;70 GROUP BY sex HAVING count(id)&gt;2;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>分页查询：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM student LIMIT 0,3;</span><br><span class="line">开始的索引 = (当前的页码 - 1) * 每页显示的条数</span><br></pre></td></tr></table></figure>
-</li>
+<li>将libfastcommonV1.0.7.tar.gz拷贝至/usr/local/下</li>
 </ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local</span><br><span class="line">tar -zxvf libfastcommonV1.0.7.tar.gz</span><br><span class="line">cd libfastcommon-1.0.7</span><br><span class="line">./make.sh</span><br><span class="line">./make.sh install</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>Group By:从字面意义上理解就是根据“By”指定的规则对数据进行分组，所谓的分组就是将一个“数据集”划分成若干个“小区域”，然后针对若干个“小区域”进行数据处理。</p>
+<p>注意：libfastcommon安装好后会自动将库文件拷贝至/usr/lib64下，由于FastDFS程序引用usr/lib目录所以需要将/usr/lib64下的库文件拷贝至/usr/lib下。要拷贝的文件如下：libfastcommon.so</p>
 </blockquote>
-<h2 id="约束："><a href="#约束：" class="headerlink" title="约束："></a>约束：</h2><ol>
-<li><p>非空约束(not null)：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">创建表时添加非空约束：CREATE TABLE student(id int,name varchar(20) NOT NULL);</span><br><span class="line">创建完添加非空约束：alert table student modify name varchar(20) not null;</span><br><span class="line">修改非空约束：alert table student modify name varchar(20);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>唯一约束(unique)：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">创建表时添加唯一约束：CREATE TABLE student(id int,name varchar(20) unique);可以有null但也只能有一个</span><br><span class="line">删除唯一约束：alter table student drop index age;</span><br><span class="line">表创建完后添加唯一约束：alter table student modify age int unique;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>主键约束(primary key)：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">非空且唯一，一张表只有一个字段为主键，主键就是表中记录的唯一主键create table student(id int primary key,name varchar(32));</span><br><span class="line">删除主键约束：alter table student drop primary key;</span><br><span class="line">创建完表添加主键：alter table student modify id int primary key;</span><br><span class="line">如果某一列是数值类型的，使用 auto_increment可以来完成值的自动增长;</span><br><span class="line">删除自动增长：alter table student modify id int;</span><br><span class="line">添加自动增长：alter table student modify id int auto_increment;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>外键约束(foreign key)：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">在创建表时，可以添加外键create table 表名(</span><br><span class="line">						...</span><br><span class="line">						constraint 外键名称 foreign key (外键列名称) references 主表名称(主表列名称)</span><br><span class="line">					    );</span><br><span class="line">删除外键：alter table 表名 drop foreign key 外键名称</span><br><span class="line">添加外键：alter table 表名 add constraint 外键名称 foreign key (外键列名称) references 主表名称(主表列名称);</span><br><span class="line">级联更新：删除外键以后再执行级联更新，alter table 表名 add constraint 外键名称 foreign key (外键列表名称) references 主表名称(主表列名称) on update cascade;</span><br><span class="line">级联删除：删除外键以后再执行级联更新，alter table 表名 add constraint 外键名称 foreign key (外键列表名称) references 主表名称(主表列名称) on update cascade on delete cascad；</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="数据库的设计："><a href="#数据库的设计：" class="headerlink" title="数据库的设计："></a>数据库的设计：</h2><ol>
-<li>多表之间的关系：<ol>
-<li>一对一：</li>
-<li>一对多(多对一)：在多地一方建立外键，指向一的一方的主键</li>
-<li>多对多：需要中间表，至少包含两个字段，这两个字段作为中间表的外键，分别指向两张表的主键</li>
-</ol>
-</li>
-</ol>
-<blockquote>
-<p>数据库备份还原：mysqldump -uroot -proot 数据库名&gt;保存路径</p>
-</blockquote>
-<h2 id="内连接查询："><a href="#内连接查询：" class="headerlink" title="内连接查询："></a>内连接查询：</h2><pre><code>显式内连接：
-    关键字：inner join on
-    语句：select * from a_table a inner join b_table b on a.a_id = b.b_id;
-    组合两个表中的记录，返回关联字段相符的记录，也就是返回两个表的交集(阴影)部分。
-隐式内链接：使用where条件消除无用数据，选择列时两个表同名的字段前要加表的名称
-</code></pre><h2 id="外连接查询："><a href="#外连接查询：" class="headerlink" title="外连接查询："></a>外连接查询：</h2><pre><code>左外连接：左表(a_table)的记录将会全部表示出来，而右表(b_table)只会显示符合搜索条件的记录,
-         select * from a_table a left join b_table b on a.a_id = b.b_id;
-右外连接：与右外相反,select * from a_table a right outer join b_table b on a.a_id = b.b_id;
-全外连接：(oracle特有)
-</code></pre><h2 id="子查询：查询中嵌套查询，称嵌套查询为子查询；"><a href="#子查询：查询中嵌套查询，称嵌套查询为子查询；" class="headerlink" title="子查询：查询中嵌套查询，称嵌套查询为子查询；"></a>子查询：查询中嵌套查询，称嵌套查询为子查询；</h2><pre><code>结果是单行单列的：SELECT * FROM student WHERE s_id=(SELECT s_id FROM score WHERE s_score=99);
-结果是多行单列的：SELECT * FROM student WHERE student.`s_id`IN(SELECT score.`s_id`FROM score WHERE score.`s_score`&gt;=90);
-结果是多行多列的：子查询结果作为一张虚拟表；
-</code></pre><p>##自连接：把一张表当多张表来用 —-&gt;用于属性菜单的表</p>
-<p>##事务：</p>
-<ol>
-<li>开启事务，回滚，提交事务，同一事务的多个操作必须保证使用的同一个连接</li>
-<li>四大特征：原子性，持久性，隔离性，一致性。</li>
-<li>事务的隔离级别：   <ul>
-<li>read uncommited: 脏读 不可重复读 幻读</li>
-<li>read commited: 不可重复读 幻读(oracle默认的隔离级别)</li>
-<li>repeatable read: 幻读(mysql默认的隔离级别)</li>
-<li>serializable: 都可以避免，效率最低</li>
+<h2 id="tracker编译安装"><a href="#tracker编译安装" class="headerlink" title="tracker编译安装"></a>tracker编译安装</h2><ul>
+<li>安装tracker和storage其实是安装fastdfs然后修改tracker或storage的配置文件</li>
 </ul>
-</li>
-</ol>
-<blockquote>
-<p>给两个有关联(外键)的表添加数据,先给主表添加才能给次表添加;要删除,得先删除次表数据,才能删除主表对应数据</p>
-</blockquote>
-<blockquote>
-<p>mysql数据库在windows下字段名称(列名)不区分大小写</p>
-</blockquote>
-<p>##容易忽略的小点：</p>
 <ol>
-<li>jdbc是连接数据库的api,</li>
-<li>druid和c3p0是连接池技术</li>
-<li>jdbctemplete和dbutils是操作数据库的工具类</li>
-<li>jdbctemplete需要自己写个jdbcutils提供连接池;dbutils需要c3p0utils提供连接池</li>
+<li>将FastDFS_v5.05.tar.gz拷贝至/usr/local/下</li>
 </ol>
-<blockquote>
-<p>增删改一般都是单表的</p>
-<p>where语句中不可以使用聚合函数</p>
-</blockquote>
-<p>##数据库优化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf FastDFS_v5.05.tar.gz</span><br><span class="line">cd FastDFS</span><br><span class="line">./make.sh</span><br><span class="line">./make.sh install</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>安装成功将安装目录下的conf下的文件拷贝到/etc/fdfs/下</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp /usr/local/FastDFS/conf/* /etc/fdfs/</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>配置<br>进入/etc/fdfs目录：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vim tracker.conf</span><br><span class="line">vi tracker.conf</span><br><span class="line">base_path=/home/yuqing/fastdfs</span><br></pre></td></tr></table></figure>
+<p>改为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">base_path=/home/fastdfs</span><br></pre></td></tr></table></figure>
+<p>创建fastdfs目录—————–很重要，没有这个文件夹启动不了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir  /home/fastdfs</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>启动tracker</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/fdfs_trackerd /etc/fdfs/tracker.conf restart</span><br></pre></td></tr></table></figure>
+<ol start="5">
+<li>设置开机自动启动</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@instance FastDFS]# vim /etc/rc.d/rc.local</span><br><span class="line">将运行命令行添加进文件：/usr/bin/fdfs_trackerd /etc/fdfs/tracker.conf restart</span><br></pre></td></tr></table></figure>
+<h2 id="FastDFS–storage安装"><a href="#FastDFS–storage安装" class="headerlink" title="FastDFS–storage安装"></a>FastDFS–storage安装</h2><ul>
+<li>原理同trackerd,由于我是把trackerd和storage安装在一个服务器,所以只要安装一次FastDFS,然后修改/etc/fdfs下的storage.conf配置文件即可</li>
+</ul>
 <ol>
-<li>数据库设计要合理(三大范式)</li>
-<li>添加索引(普通索引,主键索引,唯一索引,全文索引)</li>
-<li>分表分库技术(去模分表,水平分割,垂直分割)</li>
-<li>读写分离</li>
-<li>存储过程</li>
-<li>配置最大连接数my.ini</li>
-<li>数据库服务器升级</li>
-<li>随时清理碎片化</li>
-<li>sql语句调优</li>
+<li>修改storage.conf</li>
 </ol>
-<p>###数据库设计</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">vi storage.conf</span><br><span class="line">group_name=group1</span><br><span class="line">base_path=/home/yuqing/FastDFS改为：base_path=/home/FastDFS</span><br><span class="line">store_path0=/home/yuqing/FastDFS改为：store_path0=/home/FastDFS/fdfs_storage</span><br><span class="line">mkdir /home/FastDFS/fdfs_storage这一步很关键，没有这个文件夹启动不了</span><br><span class="line">#如果有多个挂载磁盘则定义多个store_path，如下</span><br><span class="line">#store_path1=.....</span><br><span class="line">#store_path2=......</span><br><span class="line">tracker_server=192.168.101.3:22122   #配置tracker服务器:IP</span><br><span class="line">#如果有多个则配置多个tracker</span><br><span class="line">tracker_server=192.168.101.4:22122</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>启动</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/fdfs_storaged /etc/fdfs/storage.conf restart</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>设置开机自动启动</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@instance FastDFS]# vim /etc/rc.d/rc.local</span><br><span class="line">将运行命令行添加进文件：/usr/bin/fdfs_storaged /etc/fdfs/storage.conf restart</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>上传图片测试</li>
+</ol>
 <ul>
-<li>1F.原子约束,每一列不能再分</li>
-<li>2F.保证每一条记录唯一</li>
-<li>3F.不要有冗余数据</li>
+<li>通过fdfs_test程序<br>FastDFS安装成功可通过/usr/bin/fdfs_test测试上传、下载等操作。</li>
 </ul>
-<p>###分库与分表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">修改/etc/fdfs/client.conf</span><br><span class="line">base_path=/home/fastdfs</span><br><span class="line">tracker_server=192.168.101.3:22122</span><br><span class="line">使用格式：</span><br><span class="line">/usr/bin/fdfs_test 客户端配置文件地址  upload  上传文件</span><br></pre></td></tr></table></figure>
 <ul>
-<li>垂直切分:把表按模块划分到不同的数据库中,但没有解决单表数据量大的问题</li>
-<li>水平切分:把一个表按照某种规则吧数据划分到不同表或数据库中</li>
+<li>比如将/home下的图片上传到FastDFS中：</li>
 </ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/fdfs_test /etc/fdfs/client.conf upload /home/tomcat.png</span><br><span class="line"></span><br><span class="line">http://192.168.101.3/group1/M00/00/00/wKhlBVVY2M-AM_9DAAAT7-0xdqM485_big.png就是文件的下载路径。</span><br><span class="line">对应storage服务器上的</span><br><span class="line">/home/fastdfs/fdfs_storage/data/00/00/wKhlBVVY2M-AM_9DAAAT7-0xdqM485_big.png文件。</span><br></pre></td></tr></table></figure>
+<p>由于现在还没有和nginx整合无法使用http下载。</p>
+<h2 id="FastDFS和nginx整合"><a href="#FastDFS和nginx整合" class="headerlink" title="FastDFS和nginx整合"></a>FastDFS和nginx整合</h2><ul>
+<li>在Storage上安装nginx</li>
+</ul>
+<ol>
+<li>安装FastDFS-nginx-module:<br>将FastDFS-nginx-module_v1.16.tar.gz传至/usr/local/下</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local</span><br><span class="line">tar -zxvf FastDFS-nginx-module_v1.16.tar.gz</span><br><span class="line">cd FastDFS-nginx-module/src</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>修改config文件将/usr/local/路径改为/usr/—–三处必须都改才行，不然模块编译不进去nginx<br>将FastDFS-nginx-module/src下的mod_FastDFS.conf拷贝至/etc/fdfs/下</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp mod_FastDFS.conf /etc/fdfs/</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>并修改mod_FastDFS.conf的内容：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/fdfs/mod_FastDFS.conf</span><br><span class="line">base_path=/home/FastDFS</span><br><span class="line">tracker_server=192.168.101.3:22122</span><br><span class="line">#tracker_server=192.168.101.4:22122（多个tracker配置多行）</span><br><span class="line">url_have_group_name=true        #url中包含group名称</span><br><span class="line">store_path0=/home/FastDFS/fdfs_storage   #指定文件存储路径</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>将libfdfsclient.so拷贝至/usr/lib下</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp /usr/lib64/libfdfsclient.so /usr/lib/</span><br></pre></td></tr></table></figure>
+<ol start="5">
+<li>创建nginx/client目录</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /var/temp/nginx/client</span><br></pre></td></tr></table></figure>
+<h2 id="nginx安装"><a href="#nginx安装" class="headerlink" title="nginx安装"></a>nginx安装</h2><ol>
+<li>添加FastDFS-nginx-module模块</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">./configure \</span><br><span class="line">--prefix=/usr/local/nginx \</span><br><span class="line">--pid-path=/var/run/nginx/nginx.pid \</span><br><span class="line">--lock-path=/var/lock/nginx.lock \</span><br><span class="line">--error-log-path=/var/log/nginx/error.log \</span><br><span class="line">--http-log-path=/var/log/nginx/access.log \</span><br><span class="line">--with-http_gzip_static_module \</span><br><span class="line">--http-client-body-temp-path=/var/temp/nginx/client \</span><br><span class="line">--http-proxy-temp-path=/var/temp/nginx/proxy \</span><br><span class="line">--http-fastcgi-temp-path=/var/temp/nginx/fastcgi \</span><br><span class="line">--http-uwsgi-temp-path=/var/temp/nginx/uwsgi \</span><br><span class="line">--http-scgi-temp-path=/var/temp/nginx/scgi</span><br><span class="line"></span><br><span class="line">//安装fastdfs-nginx-module是添加这个模块重新编译</span><br><span class="line">--add-module= /usr/local/fastdfs-nginx-module/src  ---这个是根据解压后文件夹路径来的</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>安装</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>添加server:</li>
+</ol>
+<ul>
+<li>修改nginx配置文件</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /usr/local/nginx/conf/nginx.conf</span><br></pre></td></tr></table></figure>
+<ul>
+<li>添加一个server</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">        listen       80;</span><br><span class="line">        server_name  192.168.0.4;</span><br><span class="line"></span><br><span class="line">        location /group1/M00/&#123;</span><br><span class="line">                root /home/FastDFS/fdfs_storage/data/;</span><br><span class="line">                ngx_fastdfs_module;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>说明：server_name指定本机ip<br>location /group1/M00/：group1为nginx 服务FastDFS的分组名称，M00是FastDFS自动生成编号，对应store_path0=/home/FastDFS/fdfs_storage，如果FastDFS定义store_path1，这里就是M01</p>
+</blockquote>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试:"></a>测试:</h2><p>比如我上传的图片地址是:<a href="http://192.168.0.4/group1/M00/00/00/wKgABFyzBhKAGUs6AAA-6HwHHTw944_big.png" target="_blank" rel="noopener">http://192.168.0.4/group1/M00/00/00/wKgABFyzBhKAGUs6AAA-6HwHHTw944_big.png</a><br>我的服务器公网ip是:106.12.18.128,我的服务器inet对应的ip是192.168.0.4,这样我在浏览器地址输入<a href="http://106.12.27.128/group1/M00/00/00/wKgABFyzBhKAGUs6AAA-6HwHHTw944_big.png即可访问到图片" target="_blank" rel="noopener">http://106.12.27.128/group1/M00/00/00/wKgABFyzBhKAGUs6AAA-6HwHHTw944_big.png即可访问到图片</a></p>
 
       
     </div>
@@ -632,7 +583,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/mysql/" rel="tag"># mysql</a>
+            <a href="/tags/fastDFS/" rel="tag"># fastDFS</a>
           
         </div>
       
@@ -697,8 +648,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/10/JavaScript&JQuery/" rel="next" title="JavaScript笔记">
-                <i class="fa fa-chevron-left"></i> JavaScript笔记
+              <a href="/2019/04/14/CentOS7.5安装mysql/" rel="next" title="CentOS7.5安装mysql">
+                <i class="fa fa-chevron-left"></i> CentOS7.5安装mysql
               </a>
             
           </div>
@@ -707,8 +658,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/12/06/Maven/" rel="prev" title="Maven笔记">
-                Maven笔记 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/04/14/CentOS7.5安装jdk1.8/" rel="prev" title="CentOS7.5安装jdk1.8">
+                CentOS7.5安装jdk1.8 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -885,7 +836,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令："><span class="nav-number">1.</span> <span class="nav-text">常用命令：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DQL查询"><span class="nav-number">2.</span> <span class="nav-text">DQL查询</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#约束："><span class="nav-number">3.</span> <span class="nav-text">约束：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库的设计："><span class="nav-number">4.</span> <span class="nav-text">数据库的设计：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内连接查询："><span class="nav-number">5.</span> <span class="nav-text">内连接查询：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#外连接查询："><span class="nav-number">6.</span> <span class="nav-text">外连接查询：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#子查询：查询中嵌套查询，称嵌套查询为子查询；"><span class="nav-number">7.</span> <span class="nav-text">子查询：查询中嵌套查询，称嵌套查询为子查询；</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载压缩包"><span class="nav-number">1.</span> <span class="nav-text">下载压缩包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FastDFS安装环境"><span class="nav-number">2.</span> <span class="nav-text">FastDFS安装环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装libevent"><span class="nav-number">3.</span> <span class="nav-text">安装libevent</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装libfastcommon"><span class="nav-number">4.</span> <span class="nav-text">安装libfastcommon</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tracker编译安装"><span class="nav-number">5.</span> <span class="nav-text">tracker编译安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FastDFS–storage安装"><span class="nav-number">6.</span> <span class="nav-text">FastDFS–storage安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FastDFS和nginx整合"><span class="nav-number">7.</span> <span class="nav-text">FastDFS和nginx整合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nginx安装"><span class="nav-number">8.</span> <span class="nav-text">nginx安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试"><span class="nav-number">9.</span> <span class="nav-text">测试:</span></a></li></ol></div>
             
 
           </div>
